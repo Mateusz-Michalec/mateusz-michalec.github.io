@@ -1,11 +1,25 @@
 $background: #091418;
-$background-gradient--webkit: -webkit-linear-gradient(
-  to right,
+$hero-background-gradient--webkit: -webkit-linear-gradient(
+  to bottom,
   #091418,
   #203a43,
   #091418
 );
-$background-gradient: linear-gradient(to right, #091418, #203a43, #091418);
+$hero-background-gradient: linear-gradient(
+  to top,
+  #091418,
+  #091418,
+  #203a43,
+  #091418
+);
+
+$background-dark: #202020;
+$background-dark-gradient--webkit: -webkit-linear-gradient(
+  to right,
+  #202020,
+  #172123
+);
+$background-dark-gradient: linear-gradient(to bottom, #202020, #172123);
 
 $color-primary: #50c9c3;
 $color-primary-gradient--webkit: -webkit-linear-gradient(
@@ -23,3 +37,11 @@ $d--xs: 0.6rem;
 $d--sm: 1.5rem;
 $d--md: 3rem;
 $d--lg: 5rem;
+
+$br--xs: 5px;
+$br--sm: 10px;
+$br--md: 15px;
+
+// transitions
+$transition-fast: all 0.15s ease-in-out;
+$transition-slow: all 0.3s ease-in-out;

@@ -1,0 +1,17 @@
+@import "../../../assets/variables.scss";
+
+.options {
+  .bi {
+    height: 1.55rem;
+  }
+
+  display: flex;
+  justify-content: end;
+  gap: $d--sm;
+  padding: $d--sm $d--sm 0;
+  &__flag {
+    height: 2rem;
+    width: 2rem;
+    border-radius: $br--xs;
+  }
+}

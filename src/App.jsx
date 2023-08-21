@@ -2,12 +2,16 @@ import "./App.scss";
 
 import React from "react";
 import Hero from "./components/Hero/Hero";
+import Options from "./components/Hero/Options/Options";
 
 const App = () => {
   return (
-    <main className="app">
-      <Hero />
-    </main>
+    <>
+      <Options />
+      <main>
+        <Hero />
+      </main>
+    </>
   );
 };
 

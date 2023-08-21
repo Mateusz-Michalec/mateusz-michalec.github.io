@@ -7,27 +7,88 @@
   align-items: center;
   gap: $d--sm;
   text-align: center;
+  background: $hero-background-gradient;
+  background: $hero-background-gradient--webkit;
+  padding: 0 0 2rem;
 
-  &__img {
-    max-width: 100%;
-    border-radius: 50%;
-    width: 250px;
+  &__img-glow-border {
+    position: relative;
+    display: inline-block;
+    padding: 6px;
     background: $color-primary-gradient;
     background: $color-primary-gradient--webkit;
-    padding: 5px;
-    background-clip: padding-box;
-    -webkit-background-clip: padding-box;
-    border: 5px solid transparent;
+    filter: drop-shadow(0 0 12px $color-primary);
+    overflow: hidden;
+    border-radius: 50%;
+    width: 250px;
+    animation: rotateGradient 3s infinite linear;
+
+    @keyframes rotateGradient {
+      0% {
+        background-position: 0%;
+      }
+      100% {
+        background-position: 100%;
+      }
+    }
+  }
+
+  &__img {
+    position: relative;
+    z-index: 1;
+    display: block;
+    max-width: 100%;
+    border-radius: inherit;
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    gap: $d--xs;
   }
 
   &__name {
+    position: relative;
     font-size: 2rem;
-    letter-spacing: 2px;
-    margin-bottom: $d--xs;
+    letter-spacing: 3px;
+    border-right: 5px solid $color-primary;
+    padding-left: 5px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3s forwards;
     background: $color-primary-gradient;
     background: $color-primary-gradient--webkit;
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
+
+    @keyframes typing {
+      0% {
+        width: 0;
+      }
+      100% {
+        border-color: transparent;
+      }
+    }
+  }
+
+  &__job {
+    border: 1px solid $color-primary;
+    background: $background-dark;
+    background: $background-dark-gradient;
+    background: $background-dark-gradient--webkit;
+    padding: $d--xs $d--sm;
+    border-radius: $br--sm;
+    letter-spacing: 3px;
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  &__btns {
+    display: flex;
+    justify-content: center;
+    gap: $d--md;
+    margin-top: $d--xs;
   }
 }

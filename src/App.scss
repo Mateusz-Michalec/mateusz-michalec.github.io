@@ -11,18 +11,30 @@
   box-sizing: border-box;
 }
 
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: $transition-slow;
+
+  &:hover {
+    transform: scale(0.95);
+  }
+}
+
+.bi {
+  color: white;
+  width: 2rem;
+  height: 2rem;
+}
+
 // General
 
 #root {
   background: $background;
-  background: $background-gradient;
-  background: $background-gradient--webkit;
-  color: white;
+  min-height: 100vh;
+  color: whitesmoke;
   font-size: 18px;
   font-family: "League Spartan", sans-serif;
   letter-spacing: 1px;
-}
-
-.app {
-  padding: 2rem;
 }
