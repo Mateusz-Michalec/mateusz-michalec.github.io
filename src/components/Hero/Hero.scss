@@ -1,0 +1,33 @@
+@import "../../assets/variables.scss";
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: $d--sm;
+  text-align: center;
+
+  &__img {
+    max-width: 100%;
+    border-radius: 50%;
+    width: 250px;
+    background: $color-primary-gradient;
+    background: $color-primary-gradient--webkit;
+    padding: 5px;
+    background-clip: padding-box;
+    -webkit-background-clip: padding-box;
+    border: 5px solid transparent;
+  }
+
+  &__name {
+    font-size: 2rem;
+    letter-spacing: 2px;
+    margin-bottom: $d--xs;
+    background: $color-primary-gradient;
+    background: $color-primary-gradient--webkit;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+}

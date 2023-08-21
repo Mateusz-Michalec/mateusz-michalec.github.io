@@ -1,0 +1,25 @@
+$background: #091418;
+$background-gradient--webkit: -webkit-linear-gradient(
+  to right,
+  #091418,
+  #203a43,
+  #091418
+);
+$background-gradient: linear-gradient(to right, #091418, #203a43, #091418);
+
+$color-primary: #50c9c3;
+$color-primary-gradient--webkit: -webkit-linear-gradient(
+  to right,
+  #96deda,
+  #50c9c3
+);
+$color-primary-gradient: linear-gradient(to right, #96deda, #50c9c3);
+
+[data-theme="light"] {
+}
+
+// Dimens
+$d--xs: 0.6rem;
+$d--sm: 1.5rem;
+$d--md: 3rem;
+$d--lg: 5rem;
