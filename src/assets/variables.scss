@@ -32,15 +32,18 @@ $color-primary-gradient: linear-gradient(to right, #96deda, #50c9c3);
 [data-theme="light"] {
 }
 
-// Dimens
-$d--xs: 0.6rem;
-$d--sm: 1.5rem;
-$d--md: 3rem;
-$d--lg: 5rem;
+// margins
+$m--xs: 0.6rem;
+$m--sm: 1.2rem;
+$m--md: 2.4rem;
+$m--lg: 4.8rem;
 
-$br--xs: 5px;
-$br--sm: 10px;
-$br--md: 15px;
+// paddings, border-radius
+
+$p--xs: 5px;
+$p--sm: 10px;
+$p--md: 15px;
+$p--lg: 20px;
 
 // transitions
 $transition-fast: all 0.15s ease-in-out;

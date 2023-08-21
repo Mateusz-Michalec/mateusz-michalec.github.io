@@ -7,11 +7,11 @@
 
   display: flex;
   justify-content: end;
-  gap: $d--sm;
-  padding: $d--sm $d--sm 0;
+  gap: $m--sm;
+  padding: $m--sm 0;
+
   &__flag {
     height: 2rem;
     width: 2rem;
-    border-radius: $br--xs;
   }
 }

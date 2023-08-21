@@ -11,23 +11,6 @@
   box-sizing: border-box;
 }
 
-button {
-  border: none;
-  background: none;
-  cursor: pointer;
-  transition: $transition-slow;
-
-  &:hover {
-    transform: scale(0.95);
-  }
-}
-
-.bi {
-  color: white;
-  width: 2rem;
-  height: 2rem;
-}
-
 // General
 
 #root {
@@ -37,4 +20,60 @@ button {
   font-size: 18px;
   font-family: "League Spartan", sans-serif;
   letter-spacing: 1px;
+  padding-bottom: $m--lg;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.bi {
+  color: whitesmoke;
+  width: 2rem;
+  height: 2rem;
+  transition: $transition-fast;
+
+  &:hover {
+    color: $color-primary;
+  }
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Responsive breakpoints */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
 }

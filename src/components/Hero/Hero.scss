@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: $d--sm;
+  gap: $m--sm;
   text-align: center;
   background: $hero-background-gradient;
   background: $hero-background-gradient--webkit;
@@ -20,7 +20,7 @@
     filter: drop-shadow(0 0 12px $color-primary);
     overflow: hidden;
     border-radius: 50%;
-    width: 250px;
+    width: 200px;
     animation: rotateGradient 3s infinite linear;
 
     @keyframes rotateGradient {
@@ -44,7 +44,7 @@
   &__header {
     display: flex;
     flex-direction: column;
-    gap: $d--xs;
+    gap: $m--xs;
   }
 
   &__name {
@@ -74,12 +74,11 @@
   }
 
   &__job {
-    border: 1px solid $color-primary;
     background: $background-dark;
     background: $background-dark-gradient;
     background: $background-dark-gradient--webkit;
-    padding: $d--xs $d--sm;
-    border-radius: $br--sm;
+    padding: $m--xs $m--sm;
+    border-radius: $p--xs;
     letter-spacing: 3px;
     width: fit-content;
     margin: 0 auto;
@@ -88,7 +87,20 @@
   &__btns {
     display: flex;
     justify-content: center;
-    gap: $d--md;
-    margin-top: $d--xs;
+    gap: $m--md;
+    margin: $m--xs 0;
+  }
+
+  &__desc {
+    background: $background-dark;
+    background: $background-dark-gradient;
+    background: $background-dark-gradient--webkit;
+    padding: $m--sm;
+    border-left: 6px solid $color-primary;
+    font-style: italic;
+    color: silver;
+    line-height: 1.6rem;
+    font-size: 1rem;
+    max-width: 600px;
   }
 }
