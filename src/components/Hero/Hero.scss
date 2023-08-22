@@ -9,7 +9,6 @@
   text-align: center;
   background: $hero-background-gradient;
   background: $hero-background-gradient--webkit;
-  padding: 0 0 2rem;
 
   &__img-glow-border {
     position: relative;
@@ -88,7 +87,7 @@
     display: flex;
     justify-content: center;
     gap: $m--md;
-    margin: $m--xs 0;
+    margin: $m--sm 0;
   }
 
   &__desc {
@@ -99,8 +98,8 @@
     border-left: 6px solid $color-primary;
     font-style: italic;
     color: silver;
-    line-height: 1.6rem;
-    font-size: 1rem;
-    max-width: 600px;
+    line-height: $long-text-lh;
+    font-size: $fs--sm;
+    max-width: 630px;
   }
 }

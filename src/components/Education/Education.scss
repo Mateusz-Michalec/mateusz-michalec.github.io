@@ -1,0 +1,47 @@
+@import "../../assets/variables.scss";
+
+.education {
+  display: flex;
+  gap: $m--sm;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__content {
+    display: flex;
+    gap: $m--md;
+    flex-direction: column;
+  }
+
+  &__years {
+    font-size: $fs--xs;
+    color: silver;
+  }
+
+  .bi {
+    min-width: 2rem;
+  }
+
+  &__card {
+    font-size: $fs--sm;
+    display: flex;
+    gap: $m--md;
+    background: $background-dark;
+    background: $background-dark-gradient;
+    background: $background-dark-gradient--webkit;
+    padding: $m--sm;
+    max-width: 570px;
+    border-radius: $p--xs;
+
+    &-content {
+      display: flex;
+      flex-direction: column;
+      gap: $m--xs;
+    }
+
+    .bi {
+      color: $color-primary;
+      margin-left: $m--xs;
+    }
+  }
+}

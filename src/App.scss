@@ -17,10 +17,15 @@
   background: $background;
   min-height: 100vh;
   color: whitesmoke;
-  font-size: 18px;
   font-family: "League Spartan", sans-serif;
   letter-spacing: 1px;
-  padding-bottom: $m--lg;
+  padding-bottom: 10rem;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  gap: $m--lg;
 }
 
 button {
@@ -40,6 +45,15 @@ button {
   }
 }
 
+.section-title {
+  letter-spacing: 3px;
+  color: $color-primary;
+}
+
+.text-silver {
+  color: silver;
+}
+
 .container {
   width: 100%;
   padding-right: 15px;
@@ -48,30 +62,24 @@ button {
   margin-left: auto;
 }
 
-/* Responsive breakpoints */
-
-/* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
   }
 }
 
-/* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .container {
     max-width: 720px;
   }
 }
 
-/* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .container {
     max-width: 960px;
   }
 }
 
-/* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   .container {
     max-width: 1140px;
