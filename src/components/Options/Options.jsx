@@ -1,12 +1,12 @@
 import React from "react";
 import "./Options.scss";
-import { images } from "../../../constans";
+import { icons } from "../../constans";
 
 const Options = () => {
   return (
-    <aside className="options">
+    <aside className="options container">
       <button>
-        <img className="options__flag" src={images.gbFlag} alt="Flaga Polski" />
+        <img className="options__flag" src={icons.gbFlag} alt="Flaga Polski" />
       </button>
       <button>
         <svg

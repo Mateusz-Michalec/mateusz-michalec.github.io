@@ -4,9 +4,9 @@ import EducationCard from "./EducationCard";
 
 const Education = () => {
   return (
-    <section className="education">
+    <section className="container education">
+      <h2 className="section-title">Edukacja</h2>
       <div className="education__content">
-        <h2 className="section-title">Edukacja</h2>
         <EducationCard
           school={"Zespół Szkół Technicznych im. Tadeusza Kościuszki w Radomiu"}
           years={"2015 - 2019"}

@@ -43,12 +43,14 @@
   &__header {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: $m--xs;
   }
 
   &__name {
     position: relative;
-    font-size: 2rem;
+    font-size: 1.8rem;
     letter-spacing: 3px;
     border-right: 5px solid $color-primary;
     padding-left: 5px;
@@ -79,13 +81,10 @@
     padding: $m--xs $m--sm;
     border-radius: $p--xs;
     letter-spacing: 3px;
-    width: fit-content;
-    margin: 0 auto;
   }
 
   &__btns {
     display: flex;
-    justify-content: center;
     gap: $m--md;
     margin: $m--sm 0;
   }
@@ -99,7 +98,6 @@
     font-style: italic;
     color: silver;
     line-height: $long-text-lh;
-    font-size: $fs--sm;
-    max-width: 630px;
+    max-width: 700px;
   }
 }

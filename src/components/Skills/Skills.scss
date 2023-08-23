@@ -1,0 +1,66 @@
+@import "../../assets/variables.scss";
+
+.skills {
+  max-width: $max-w--sm;
+  &__cards {
+    display: grid;
+    gap: $m--lg;
+  }
+
+  &__skill {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background: $background-dark;
+    border-radius: $p--md $p--md 0 0;
+    padding: $p--md 0 4rem 0;
+    transition: $transition-very-slow;
+
+    &-name {
+      position: absolute;
+      bottom: 15px;
+      left: -15px;
+      width: calc(100% + 30px);
+      text-align: center;
+      background: $color-secondary;
+      padding: $p--sm 0;
+    }
+
+    img {
+      width: 100px;
+      height: 100px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: -15px;
+      bottom: 0;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 15px 15px 0;
+      border-color: transparent $color-secondary--dark transparent transparent;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      right: -15px;
+      bottom: 0;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 15px 15px 0 0;
+      border-color: $color-secondary--dark transparent transparent transparent;
+    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .skills {
+    &__cards {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}

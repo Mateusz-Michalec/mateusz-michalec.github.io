@@ -22,6 +22,8 @@ $background-dark-gradient--webkit: -webkit-linear-gradient(
 $background-dark-gradient: linear-gradient(to bottom, #202020, #172123);
 
 $color-primary: #50c9c3;
+$color-secondary: #203a43;
+$color-secondary--dark: #192e36;
 $color-primary-gradient--webkit: -webkit-linear-gradient(
   to right,
   #96deda,
@@ -48,14 +50,13 @@ $p--lg: 20px;
 // transitions
 $transition-fast: all 0.15s ease-in-out;
 $transition-slow: all 0.3s ease-in-out;
+$transition-very-slow: all 0.6s ease-in-out;
 
 // width
 
-$max-600w: 850px;
+$max-w--sm: 760px;
 
 // typography
 
 $long-text-lh: 1.6rem;
 $fs--xs: 0.8rem;
-$fs--sm: 1rem;
-$fs--md: 1.5rem;

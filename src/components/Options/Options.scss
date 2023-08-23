@@ -1,4 +1,4 @@
-@import "../../../assets/variables.scss";
+@import "../../assets/variables.scss";
 
 .options {
   .bi {
@@ -8,7 +8,8 @@
   display: flex;
   justify-content: end;
   gap: $m--sm;
-  padding: $m--sm 0;
+  padding-top: $m--sm;
+  padding-bottom: $m--sm;
 
   &__flag {
     height: 2rem;

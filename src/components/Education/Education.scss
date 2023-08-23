@@ -1,16 +1,12 @@
 @import "../../assets/variables.scss";
 
 .education {
-  display: flex;
-  gap: $m--sm;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
+  max-width: $max-w--sm;
   &__content {
     display: flex;
     gap: $m--md;
     flex-direction: column;
+    align-items: center;
   }
 
   &__years {
@@ -18,12 +14,7 @@
     color: silver;
   }
 
-  .bi {
-    min-width: 2rem;
-  }
-
   &__card {
-    font-size: $fs--sm;
     display: flex;
     gap: $m--md;
     background: $background-dark;
@@ -42,6 +33,7 @@
     .bi {
       color: $color-primary;
       margin-left: $m--xs;
+      min-width: 2rem;
     }
   }
 }

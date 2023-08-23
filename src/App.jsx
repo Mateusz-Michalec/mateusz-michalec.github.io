@@ -2,22 +2,20 @@ import "./App.scss";
 
 import React from "react";
 import Hero from "./components/Hero/Hero";
-import Options from "./components/Hero/Options/Options";
-import Menu from "./components/Hero/Menu/Menu";
+import Options from "./components/Options/Options";
+import Menu from "./components/Menu/Menu";
 import Education from "./components/Education/Education";
+import Skills from "./components/Skills/Skills";
 
 const App = () => {
   return (
     <>
-      <div className="container">
-        <Options />
-        <Menu />
-      </div>
+      <Options />
+      <Menu />
       <main className="app">
         <Hero />
-        <div className="container">
-          <Education />
-        </div>
+        <Education />
+        <Skills />
       </main>
     </>
   );
