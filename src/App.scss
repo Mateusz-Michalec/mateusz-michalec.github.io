@@ -32,6 +32,7 @@ button {
   border: none;
   background: none;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .bi {
@@ -53,6 +54,15 @@ button {
 
 .text-silver {
   color: silver;
+}
+
+.grayed {
+  background-color: lightgray !important;
+  color: $color-dark-green !important;
+}
+
+.modal-open {
+  overflow: hidden;
 }
 
 .container {

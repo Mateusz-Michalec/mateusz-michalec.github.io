@@ -1,4 +1,8 @@
-$background: #091418;
+$color-dark-green: #091418;
+
+$background: $color-dark-green;
+$text-color: whitesmoke;
+
 $hero-background-gradient--webkit: -webkit-linear-gradient(
   to bottom,
   #091418,
@@ -24,6 +28,7 @@ $background-dark-gradient: linear-gradient(to bottom, #202020, #172123);
 $color-primary: #50c9c3;
 $color-secondary: #203a43;
 $color-secondary--dark: #192e36;
+$color-secondary-2: silver;
 $color-primary-gradient--webkit: -webkit-linear-gradient(
   to right,
   #96deda,

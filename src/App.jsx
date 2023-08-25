@@ -6,6 +6,7 @@ import Options from "./components/Options/Options";
 import Menu from "./components/Menu/Menu";
 import Education from "./components/Education/Education";
 import Skills from "./components/Skills/Skills";
+import Projects from "./components/Projects/Projects";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
         <Hero />
         <Education />
         <Skills />
+        <Projects />
       </main>
     </>
   );

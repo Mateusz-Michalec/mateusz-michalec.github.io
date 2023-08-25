@@ -10,6 +10,8 @@ import react from "../assets/icons/react.svg";
 import redux from "../assets/icons/redux.svg";
 import sass from "../assets/icons/sass.svg";
 import ts from "../assets/icons/typescript.svg";
+import left_arrow from "../assets/icons/arrow_left.svg";
+import right_arrow from "../assets/icons/arrow_right.svg";
 
 const skills = [
   {
@@ -68,4 +70,6 @@ export default {
   plFlag,
   gbFlag,
   skills,
+  left_arrow,
+  right_arrow,
 };
