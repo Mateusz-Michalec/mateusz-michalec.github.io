@@ -1,5 +1,6 @@
 @import "./assets/variables.scss";
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+@import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
 
 // Reset
 
@@ -16,7 +17,7 @@
 #root {
   background: $background;
   min-height: 100vh;
-  color: whitesmoke;
+  color: $c-text;
   font-family: "League Spartan", sans-serif;
   letter-spacing: 1px;
   padding-bottom: 10rem;
@@ -36,29 +37,20 @@ button {
 }
 
 .bi {
-  color: whitesmoke;
-  width: 2rem;
-  height: 2rem;
+  color: $c-text;
+  font-size: 2rem;
   transition: $transition-fast;
 
   &:hover {
-    color: $color-primary;
+    color: $c-aqua;
   }
 }
 
 .section-title {
   letter-spacing: 3px;
-  color: $color-primary;
+  color: $c-aqua;
   margin-bottom: $m--md;
-}
-
-.text-silver {
-  color: silver;
-}
-
-.grayed {
-  background-color: lightgray !important;
-  color: $color-dark-green !important;
+  font-size: 1.8rem;
 }
 
 .modal-open {

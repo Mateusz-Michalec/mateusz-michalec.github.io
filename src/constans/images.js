@@ -12,8 +12,16 @@ import icons from "./icons";
 const eStore = {
   mobile: [es_m_1, es_m_2, es_m_3],
   desktop: [es_d_1, es_d_2, es_d_3, es_d_4, es_d_5],
-  title: "E-commerce",
-  desc: "Projekt sklepu internetowego",
+  title: "E-commerce (sklep internetowy)",
+  features: [
+    "Przeglądanie wielu produktów",
+    "Sortowanie produktów (rosnąco, malejąco, według ceny)",
+    "Podgląd konkretnego produktu",
+    "System ocen produktu",
+    "Dane pobierane z API są zmieniane (rozmiary, cena, dostępność)",
+    "Przeglądane produkty są zapisywane w historii przeglądania",
+    "Produkty można dodawać do ulubionych oraz do koszyka",
+  ],
   technologies: [
     icons.skills[2],
     icons.skills[3],

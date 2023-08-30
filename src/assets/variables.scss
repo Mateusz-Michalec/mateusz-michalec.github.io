@@ -1,7 +1,12 @@
-$color-dark-green: #091418;
+$c-aqua: #50c9c3;
+$c-medium-green: #203a43;
+$c-medium-green--dark: #192e36;
+$c-dark-green: #091418;
+$c-black-matte: #202020;
 
-$background: $color-dark-green;
-$text-color: whitesmoke;
+$c-text: rgb(220, 220, 220);
+$c-text-lighter: whitesmoke;
+$background: $c-dark-green;
 
 $hero-background-gradient--webkit: -webkit-linear-gradient(
   to bottom,
@@ -17,24 +22,15 @@ $hero-background-gradient: linear-gradient(
   #091418
 );
 
-$background-dark: #202020;
-$background-dark-gradient--webkit: -webkit-linear-gradient(
+$c-black-matte-gradient--webkit: -webkit-linear-gradient(
   to right,
   #202020,
   #172123
 );
-$background-dark-gradient: linear-gradient(to bottom, #202020, #172123);
+$c-black-matte-gradient: linear-gradient(to bottom, #202020, #172123);
 
-$color-primary: #50c9c3;
-$color-secondary: #203a43;
-$color-secondary--dark: #192e36;
-$color-secondary-2: silver;
-$color-primary-gradient--webkit: -webkit-linear-gradient(
-  to right,
-  #96deda,
-  #50c9c3
-);
-$color-primary-gradient: linear-gradient(to right, #96deda, #50c9c3);
+$c-aqua-gradient--webkit: -webkit-linear-gradient(to right, #96deda, #50c9c3);
+$c-aqua-gradient: linear-gradient(to right, #96deda, #50c9c3);
 
 [data-theme="light"] {
 }
@@ -51,6 +47,7 @@ $p--xs: 5px;
 $p--sm: 10px;
 $p--md: 15px;
 $p--lg: 20px;
+$p--xxl: 30px;
 
 // transitions
 $transition-fast: all 0.15s ease-in-out;
@@ -63,5 +60,8 @@ $max-w--sm: 760px;
 
 // typography
 
-$long-text-lh: 1.6rem;
+$lh-list: 1.3rem;
+$lh-desc: 1.6rem;
 $fs--xs: 0.8rem;
+
+$box-shadow: $c-medium-green--dark 0px 0px 18px;

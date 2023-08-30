@@ -11,7 +11,7 @@
     position: relative;
     display: flex;
     justify-content: center;
-    background: $background-dark;
+    background: $c-black-matte;
     border-radius: $p--md $p--md 0 0;
     padding: $p--md 0 4rem 0;
     transition: $transition-very-slow;
@@ -22,8 +22,9 @@
       left: -15px;
       width: calc(100% + 30px);
       text-align: center;
-      background: $color-secondary;
+      background: $c-medium-green;
       padding: $p--sm 0;
+      color: $c-text-lighter;
     }
 
     img {
@@ -40,7 +41,7 @@
       height: 0;
       border-style: solid;
       border-width: 0 15px 15px 0;
-      border-color: transparent $color-secondary--dark transparent transparent;
+      border-color: transparent $c-medium-green--dark transparent transparent;
     }
 
     &::before {
@@ -52,7 +53,7 @@
       height: 0;
       border-style: solid;
       border-width: 15px 15px 0 0;
-      border-color: $color-secondary--dark transparent transparent transparent;
+      border-color: $c-medium-green--dark transparent transparent transparent;
     }
   }
 }

@@ -14,9 +14,9 @@
     position: relative;
     display: inline-block;
     padding: 6px;
-    background: $color-primary-gradient;
-    background: $color-primary-gradient--webkit;
-    filter: drop-shadow(0 0 12px $color-primary);
+    background: $c-aqua-gradient;
+    background: $c-aqua-gradient--webkit;
+    filter: drop-shadow(0 0 12px $c-aqua);
     overflow: hidden;
     border-radius: 50%;
     width: 200px;
@@ -52,14 +52,14 @@
     position: relative;
     font-size: 1.8rem;
     letter-spacing: 3px;
-    border-right: 5px solid $color-primary;
+    border-right: 5px solid $c-aqua;
     padding-left: 5px;
     width: 100%;
     white-space: nowrap;
     overflow: hidden;
     animation: typing 3s forwards;
-    background: $color-primary-gradient;
-    background: $color-primary-gradient--webkit;
+    background: $c-aqua-gradient;
+    background: $c-aqua-gradient--webkit;
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
@@ -75,29 +75,30 @@
   }
 
   &__job {
-    background: $background-dark;
-    background: $background-dark-gradient;
-    background: $background-dark-gradient--webkit;
+    background: $c-black-matte;
+    background: $c-black-matte-gradient;
+    background: $c-black-matte-gradient--webkit;
     padding: $m--xs $m--sm;
     border-radius: $p--xs;
     letter-spacing: 3px;
+    color: $c-text-lighter;
   }
 
   &__btns {
     display: flex;
-    gap: $m--md;
+    gap: $m--lg;
     margin: $m--sm 0;
   }
 
   &__desc {
-    background: $background-dark;
-    background: $background-dark-gradient;
-    background: $background-dark-gradient--webkit;
+    background: $c-black-matte;
+    background: $c-black-matte-gradient;
+    background: $c-black-matte-gradient--webkit;
     padding: $m--sm;
-    border-left: 6px solid $color-primary;
+    border-left: 6px solid $c-aqua;
     font-style: italic;
     color: silver;
-    line-height: $long-text-lh;
+    line-height: $lh-desc;
     max-width: 700px;
   }
 }

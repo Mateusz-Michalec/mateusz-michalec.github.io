@@ -1,0 +1,14 @@
+@import "../../assets/variables.scss";
+
+.projects {
+  .section-title {
+    margin-bottom: $m--md;
+  }
+
+  &__btns-control {
+    display: flex;
+    justify-content: center;
+    gap: $m--md;
+    margin-bottom: $m--md;
+  }
+}

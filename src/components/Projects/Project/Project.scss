@@ -1,0 +1,120 @@
+@import "../../../assets/variables.scss";
+
+.project {
+  border-radius: $p--md;
+
+  @extend .project__header;
+
+  &__name {
+    color: $c-aqua;
+    margin-bottom: $m--sm;
+  }
+
+  &__features {
+    line-height: $lh-list;
+
+    &-list {
+      list-style-position: inside;
+      display: flex;
+      flex-direction: column;
+      gap: $m--xs;
+    }
+  }
+
+  &__preview {
+    width: 20rem;
+    max-width: 100%;
+  }
+
+  &__technologies {
+    display: flex;
+    justify-content: space-evenly;
+    gap: $m--sm;
+    padding: $p--xs;
+    border-radius: $p--md $p--md 0 0;
+    background-color: $c-medium-green--dark;
+  }
+
+  &__technology {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: $m--md;
+    max-width: 100%;
+  }
+
+  &__href-btns {
+    display: flex;
+    justify-content: center;
+    gap: $m--lg;
+    margin-top: $m--md;
+
+    padding: $p--md;
+
+    .bi {
+      font-size: 2.5rem;
+    }
+  }
+
+  &__preview-img-wrapper {
+    max-height: 28rem;
+    max-width: 100%;
+
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    border-bottom-left-radius: $p--md;
+    border-bottom-right-radius: $p--md;
+  }
+
+  &__preview-img {
+    width: 100%;
+    cursor: pointer;
+    border-bottom-left-radius: $p--md;
+    border-bottom-right-radius: $p--md;
+  }
+
+  &__view-btns {
+    display: flex;
+    justify-content: center;
+    gap: $m--md;
+    margin-top: $m--sm;
+
+    .project__view-btn {
+      color: $c-text-lighter;
+      background-color: $c-medium-green;
+      padding: $p--sm $p--md;
+      border-radius: $p--md;
+      transition: $transition-fast;
+
+      &:hover {
+        background-color: $c-medium-green !important;
+      }
+
+      &.grayed {
+        background-color: unset;
+        outline: 1px solid $c-medium-green;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .project {
+    border: 3px solid $c-medium-green;
+    box-shadow: $box-shadow;
+    padding: $p--xxl;
+    &__header {
+      flex-direction: row;
+    }
+  }
+}

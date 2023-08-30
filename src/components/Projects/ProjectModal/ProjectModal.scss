@@ -1,0 +1,52 @@
+@import "../../../assets/variables.scss";
+
+.project__modal {
+  position: fixed;
+  inset: 0;
+  border: none;
+  box-shadow: none;
+  width: 100vw;
+  height: 100vh;
+  max-width: 100vw;
+  max-height: 100vh;
+  z-index: 99;
+  background-color: $c-black-matte;
+
+  &-img {
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+    margin: calc(2.5rem + 2 * $p--lg) 0;
+  }
+
+  &-close-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: $p--lg;
+
+    .bi {
+      font-size: 2.5rem;
+      color: white;
+    }
+  }
+
+  &-btns {
+    display: flex;
+    justify-content: center;
+    gap: $m--lg;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: $c-dark-green;
+    padding: $p--lg;
+
+    .bi {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+  }
+}

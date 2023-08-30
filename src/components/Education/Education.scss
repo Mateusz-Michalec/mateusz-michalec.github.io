@@ -17,9 +17,9 @@
   &__card {
     display: flex;
     gap: $m--md;
-    background: $background-dark;
-    background: $background-dark-gradient;
-    background: $background-dark-gradient--webkit;
+    background: $c-black-matte;
+    background: $c-black-matte-gradient;
+    background: $c-black-matte-gradient--webkit;
     padding: $m--sm;
     max-width: 570px;
     border-radius: $p--xs;
@@ -31,7 +31,7 @@
     }
 
     .bi {
-      color: $color-primary;
+      color: $c-aqua;
       margin-left: $m--xs;
       min-width: 2rem;
     }
