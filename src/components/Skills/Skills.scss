@@ -12,6 +12,8 @@
     display: flex;
     justify-content: center;
     background: $c-black-matte;
+    background: $c-black-matte-gradient;
+    background: $c-black-matte-gradient--webkit;
     border-radius: $p--md $p--md 0 0;
     padding: $p--md 0 4rem 0;
     transition: $transition-very-slow;

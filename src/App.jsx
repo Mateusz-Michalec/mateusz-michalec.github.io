@@ -7,6 +7,7 @@ import Menu from "./components/Menu/Menu";
 import Education from "./components/Education/Education";
 import Skills from "./components/Skills/Skills";
 import Projects from "./components/Projects/Projects";
+import Contact from "./components/Contact/Contact";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <Education />
         <Skills />
         <Projects />
+        <Contact />
       </main>
     </>
   );

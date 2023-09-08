@@ -1,0 +1,33 @@
+@import "../../assets/variables.scss";
+
+.contact {
+  &__btns {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $m--lg;
+
+    .contact__btn {
+      position: relative;
+      display: flex;
+      gap: $m--xs;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: $c-text;
+      letter-spacing: 1px;
+      background: $c-black-matte;
+      background: $c-black-matte-gradient;
+      background: $c-black-matte-gradient--webkit;
+      padding: $p--md;
+      border-left: 6px solid $c-aqua;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .contact {
+    &__btns {
+      grid-template-columns: 1.3fr 1fr 1fr;
+    }
+  }
+}

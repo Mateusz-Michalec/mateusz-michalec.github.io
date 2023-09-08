@@ -34,6 +34,14 @@ button {
   background: none;
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
+
+  * {
+    transition: $transition-fast;
+  }
+
+  &:hover * {
+    color: $c-aqua;
+  }
 }
 
 .bi {
@@ -55,6 +63,26 @@ button {
 
 .modal-open {
   overflow: hidden;
+}
+
+.copy-icon {
+  font-size: inherit;
+}
+
+.copy-message {
+  position: absolute;
+  visibility: hidden;
+  bottom: 0;
+  opacity: 0;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%);
+
+  &.visible {
+    visibility: visible;
+    opacity: 1;
+    bottom: -1.5rem;
+  }
 }
 
 .container {

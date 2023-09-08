@@ -22,7 +22,8 @@
   }
 
   &__preview {
-    width: 20rem;
+    width: 25rem;
+
     max-width: 100%;
   }
 
@@ -55,15 +56,31 @@
     gap: $m--lg;
     margin-top: $m--md;
 
-    padding: $p--md;
-
     .bi {
       font-size: 2.5rem;
+    }
+
+    .project__href-btn {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: $c-text;
+      text-transform: uppercase;
+      transition: $transition-fast;
+
+      &:hover {
+        color: $c-aqua;
+
+        .bi {
+          color: $c-aqua;
+        }
+      }
     }
   }
 
   &__preview-img-wrapper {
-    max-height: 28rem;
+    max-height: 20rem;
     max-width: 100%;
 
     overflow-y: scroll;

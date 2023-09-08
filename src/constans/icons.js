@@ -21,7 +21,7 @@ const skills = [
   },
   {
     icon: css,
-    text: "CSS3",
+    text: "CSS3 (BEM)",
     alt: "CSS icon by Icons8",
   },
   {
@@ -56,7 +56,7 @@ const skills = [
   },
   {
     icon: github_desktop,
-    text: "Github Desktop",
+    text: "Git (Github Desktop)",
     alt: "Git Desktop icon by Icons8",
   },
   {
