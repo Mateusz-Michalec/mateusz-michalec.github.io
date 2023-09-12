@@ -9,18 +9,11 @@ $c-text-lighter: whitesmoke;
 $background: $c-dark-green;
 
 $hero-background-gradient--webkit: -webkit-linear-gradient(
-  to bottom,
+  to right,
   #091418,
-  #203a43,
-  #091418
+  #203a43
 );
-$hero-background-gradient: linear-gradient(
-  to top,
-  #091418,
-  #091418,
-  #203a43,
-  #091418
-);
+$hero-background-gradient: linear-gradient(to right, #091418, #203a43);
 
 $c-black-matte-gradient--webkit: -webkit-linear-gradient(
   to right,

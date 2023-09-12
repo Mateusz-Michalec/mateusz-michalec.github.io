@@ -1,40 +1,33 @@
 @import "../../assets/variables.scss";
 
 .hero {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: $m--sm;
-  text-align: center;
-  background: $hero-background-gradient;
-  background: $hero-background-gradient--webkit;
+  &__gradient {
+    position: absolute;
+
+    background: $hero-background-gradient;
+    filter: blur(80px);
+    opacity: 0.5;
+    width: 100%;
+    height: 15rem;
+  }
+
+  .container {
+    display: grid;
+    gap: $m--sm;
+    text-align: center;
+    backdrop-filter: blur(10px);
+  }
 
   &__img-glow-border {
-    position: relative;
-    display: inline-block;
-    padding: 6px;
-    background: $c-aqua-gradient;
-    background: $c-aqua-gradient--webkit;
     filter: drop-shadow(0 0 12px $c-aqua);
-    overflow: hidden;
     border-radius: 50%;
     width: 200px;
-    animation: rotateGradient 3s infinite linear;
-
-    @keyframes rotateGradient {
-      0% {
-        background-position: 0%;
-      }
-      100% {
-        background-position: 100%;
-      }
-    }
+    height: 200px;
+    border: 6px solid $c-aqua;
+    margin: 0 auto;
   }
 
   &__img {
-    position: relative;
-    z-index: 1;
     display: block;
     max-width: 100%;
     border-radius: inherit;
@@ -97,8 +90,24 @@
     padding: $m--sm;
     border-left: 6px solid $c-aqua;
     font-style: italic;
-    color: silver;
     line-height: $lh-desc;
-    max-width: 700px;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero {
+    .container {
+      grid-template-columns: 1fr 2fr;
+      gap: $m--lg;
+    }
+
+    &__img-glow-border {
+      margin: auto;
+    }
+
+    &__img-glow-border {
+      width: 230px;
+      height: 230px;
+    }
   }
 }

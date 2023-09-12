@@ -10,6 +10,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  letter-spacing: 1px;
 }
 
 // General
@@ -19,7 +20,7 @@
   min-height: 100vh;
   color: $c-text;
   font-family: "League Spartan", sans-serif;
-  letter-spacing: 1px;
+
   padding-bottom: 10rem;
 }
 
@@ -87,33 +88,39 @@ button {
 
 .container {
   width: 100%;
-  padding-right: 30px;
-  padding-left: 30px;
+  padding-right: 45px;
+  padding-left: 45px;
   margin-right: auto;
   margin-left: auto;
 }
 
 @media (min-width: 576px) {
   .container {
-    max-width: 540px;
+    max-width: 500px;
   }
 }
 
 @media (min-width: 768px) {
   .container {
-    max-width: 720px;
+    max-width: 650px;
   }
 }
 
 @media (min-width: 992px) {
   .container {
-    max-width: 960px;
+    max-width: 800px;
   }
 }
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 1140px;
+    max-width: 950px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1050px;
   }
 }
 

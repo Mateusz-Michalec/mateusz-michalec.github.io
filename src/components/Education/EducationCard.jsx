@@ -14,7 +14,7 @@ const EducationCard = ({ school, years, degree }) => {
             <span>Kierunek:</span> <b>Informatyka</b>
           </p>
           <p>
-            <span>Uzyskany tytuł:</span> <b>{degree}</b>
+            <span>Tytuł:</span> <b>{degree}</b>
           </p>
           <p>Stypendia naukowe za wyróżniające wyniki w nauce</p>
         </header>
