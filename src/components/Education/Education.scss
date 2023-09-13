@@ -4,7 +4,7 @@
   &__content {
     display: grid;
     gap: $m--md;
-    align-items: center;
+    justify-content: center;
   }
 
   &__years {
@@ -20,7 +20,6 @@
     background: $c-black-matte-gradient;
     background: $c-black-matte-gradient--webkit;
     padding: $p--lg;
-    max-width: 570px;
     border-radius: $p--xs;
 
     &-content {
@@ -37,8 +36,9 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .education__content {
+    gap: $m--lg;
     grid-template-columns: 1fr 1fr;
   }
 }

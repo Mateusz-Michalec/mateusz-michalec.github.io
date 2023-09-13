@@ -5,7 +5,7 @@ import { images } from "../../constans";
 const Hero = () => {
   return (
     <section className="hero">
-      {/* <div className="hero__gradient" /> */}
+      <div className="hero__gradient" />
       <div className="container">
         <div className="hero__img-glow-border">
           <img src={images.myPhoto} className="hero__img" alt="Zdjęcie " />

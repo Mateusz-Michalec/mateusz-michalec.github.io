@@ -3,11 +3,10 @@
 .hero {
   &__gradient {
     position: absolute;
-
     background: $hero-background-gradient;
     filter: blur(80px);
     opacity: 0.5;
-    width: 100%;
+    width: 90%;
     height: 15rem;
   }
 
@@ -109,5 +108,11 @@
       width: 230px;
       height: 230px;
     }
+  }
+}
+
+@media (min-width: 768px) {
+  .hero {
+    padding-top: $m--md;
   }
 }

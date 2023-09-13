@@ -1,9 +1,11 @@
 import React from "react";
 import "./Menu.scss";
+import Options from "../Options/Options";
 
 const Menu = () => {
   return (
     <nav className="menu">
+      <Options />
       <button className="menu__item">
         <i className="bi bi-book"></i>
         <span className="menu__item-name">Edukacja</span>
