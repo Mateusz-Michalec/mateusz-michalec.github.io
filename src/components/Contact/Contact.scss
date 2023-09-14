@@ -4,7 +4,7 @@
   &__btns {
     display: grid;
     grid-template-columns: 1fr;
-    gap: $m--lg;
+    gap: $m--md;
 
     .contact__btn {
       position: relative;
@@ -14,7 +14,6 @@
       justify-content: center;
       align-items: center;
       color: $c-text;
-      letter-spacing: 1px;
       background: $c-black-matte;
       background: $c-black-matte-gradient;
       background: $c-black-matte-gradient--webkit;

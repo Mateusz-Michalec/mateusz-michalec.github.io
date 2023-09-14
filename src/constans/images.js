@@ -10,7 +10,6 @@ import es_m_3 from "../assets/images/eStore/m_3.png";
 import cr_d_1 from "../assets/images/crypto/d_1.png";
 import cr_d_2 from "../assets/images/crypto/d_2.png";
 import cr_d_3 from "../assets/images/crypto/d_3.png";
-import cr_d_4 from "../assets/images/crypto/d_4.png";
 import cr_m_1 from "../assets/images/crypto/m_1.png";
 import cr_m_2 from "../assets/images/crypto/m_2.png";
 import cr_m_3 from "../assets/images/crypto/m_3.png";
@@ -46,7 +45,7 @@ const eStore = {
 
 const crypto = {
   mobile: [cr_m_1, cr_m_2, cr_m_3],
-  desktop: [cr_d_1, cr_d_2, cr_d_3, cr_d_4],
+  desktop: [cr_d_1, cr_d_2, cr_d_3],
   title: "Crypto (wiadomości kryptowalutowe)",
   features: [
     "Przeglądanie światowych statystyk",

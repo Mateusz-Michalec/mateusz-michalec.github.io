@@ -61,14 +61,16 @@ const Project = ({ project }) => {
           </div>
         </div>
         <div className="project__features">
-          <h2 className="project__name">{project.title}</h2>
-          <ul className="project__features-list">
-            {project.features.map((feature) => (
-              <li className="project__feature" key={feature}>
-                {feature}
-              </li>
-            ))}
-          </ul>
+          <div>
+            <h2 className="project__name">{project.title}</h2>
+            <ul className="project__features-list">
+              {project.features.map((feature) => (
+                <li className="project__feature" key={feature}>
+                  {feature}
+                </li>
+              ))}
+            </ul>
+          </div>
           <div className="project__href-btns">
             <button className="project__href-btn">
               <a href={project.link} target="_blank">

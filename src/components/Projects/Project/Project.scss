@@ -2,7 +2,7 @@
 
 .project {
   border-radius: $p--md;
-  min-height: 33rem;
+  min-height: 28rem;
 
   @extend .project__header;
 
@@ -33,12 +33,6 @@
     }
   }
 
-  &__preview {
-    width: 25rem;
-
-    max-width: 100%;
-  }
-
   &__technologies {
     display: flex;
     justify-content: space-evenly;
@@ -56,10 +50,7 @@
   &__header {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: $m--md;
-    max-width: 100%;
   }
 
   &__href-btns {
@@ -137,14 +128,26 @@
     padding: $p--xxl;
     &__header {
       flex-direction: row;
+      justify-content: center;
+      align-items: center;
       gap: $m--lg;
+    }
+
+    &__preview-img-wrapper {
+      max-height: 250px;
     }
 
     &__preview {
       order: 1;
+      width: 50%;
     }
 
-    &__feautures {
+    &__features {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 50%;
     }
   }
 }
