@@ -2,13 +2,19 @@
 
 .projects {
   .section-title {
+    margin-bottom: 0;
+  }
+
+  &__header {
+    display: flex;
     margin-bottom: $m--md;
+
+    justify-content: space-between;
+    align-items: center;
   }
 
   &__btns-control {
     display: flex;
-    justify-content: center;
-    gap: $m--lg;
-    margin-top: $m--md;
+    gap: $m--md;
   }
 }

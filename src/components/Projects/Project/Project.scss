@@ -2,6 +2,7 @@
 
 .project {
   border-radius: $p--md;
+  min-height: 33rem;
 
   @extend .project__header;
 
@@ -11,13 +12,24 @@
   }
 
   &__features {
-    line-height: $lh-list;
+    line-height: $lh-text;
 
     &-list {
-      list-style-position: inside;
+      list-style-type: none;
       display: flex;
       flex-direction: column;
       gap: $m--xs;
+
+      .project__feature {
+        position: relative;
+        padding-left: 1rem;
+
+        &::before {
+          content: "•";
+          position: absolute;
+          left: 0;
+        }
+      }
     }
   }
 
@@ -68,22 +80,14 @@
       color: $c-text;
       text-transform: uppercase;
       transition: $transition-fast;
-
-      &:hover {
-        color: $c-aqua;
-
-        .bi {
-          color: $c-aqua;
-        }
-      }
     }
   }
 
   &__preview-img-wrapper {
-    max-height: 20rem;
+    max-height: 140px;
     max-width: 100%;
-
     overflow-y: scroll;
+
     &::-webkit-scrollbar {
       display: none;
     }
@@ -111,6 +115,7 @@
       background-color: $c-medium-green;
       padding: $p--sm $p--md;
       border-radius: $p--md;
+
       transition: $transition-fast;
 
       &:hover {
@@ -132,6 +137,14 @@
     padding: $p--xxl;
     &__header {
       flex-direction: row;
+      gap: $m--lg;
+    }
+
+    &__preview {
+      order: 1;
+    }
+
+    &__feautures {
     }
   }
 }

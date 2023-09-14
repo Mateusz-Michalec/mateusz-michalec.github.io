@@ -17,19 +17,15 @@
     backdrop-filter: blur(10px);
   }
 
-  &__img-glow-border {
-    filter: drop-shadow(0 0 12px $c-aqua);
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    border: 6px solid $c-aqua;
-    margin: 0 auto;
-  }
-
   &__img {
     display: block;
     max-width: 100%;
-    border-radius: inherit;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 6px solid $c-aqua;
+    filter: drop-shadow(0 0 12px $c-aqua);
+    margin: auto;
   }
 
   &__header {
@@ -89,24 +85,24 @@
     padding: $m--sm;
     border-left: 6px solid $c-aqua;
     font-style: italic;
-    line-height: $lh-desc;
+    line-height: $lh-text;
+    max-width: $max-w--desktop;
   }
 }
 
 @media (min-width: 768px) {
   .hero {
     .container {
-      grid-template-columns: 1fr 2fr;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       gap: $m--lg;
     }
 
-    &__img-glow-border {
-      margin: auto;
-    }
-
-    &__img-glow-border {
-      width: 230px;
-      height: 230px;
+    &__img {
+      width: 250px;
+      height: 250px;
+      margin: unset;
     }
   }
 }

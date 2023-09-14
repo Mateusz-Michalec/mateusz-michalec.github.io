@@ -7,9 +7,12 @@ const Hero = () => {
     <section className="hero">
       <div className="hero__gradient" />
       <div className="container">
-        <div className="hero__img-glow-border">
-          <img src={images.myPhoto} className="hero__img" alt="Zdjęcie " />
-        </div>
+        <img
+          src={images.myPhoto}
+          className="hero__img"
+          alt="Mateusz Michalec"
+        />
+
         <header className="hero__header">
           <h1 className="hero__name">Mateusz Michalec</h1>
           <h5 className="hero__job">Frontend developer</h5>

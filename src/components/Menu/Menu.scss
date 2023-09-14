@@ -49,9 +49,8 @@
 
 @media screen and (min-width: 992px) {
   .menu {
-    top: 50%;
+    top: 0;
     left: 0;
-    transform: translateY(-50%);
     width: 150px;
     height: 100vh;
     display: flex;
