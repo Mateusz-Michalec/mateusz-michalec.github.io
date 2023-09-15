@@ -1,6 +1,6 @@
 import "./App.scss";
 
-import React from "react";
+import React, { useRef } from "react";
 import Hero from "./components/Hero/Hero";
 import Options from "./components/Options/Options";
 import Menu from "./components/Menu/Menu";
@@ -10,16 +10,40 @@ import Projects from "./components/Projects/Projects";
 import Contact from "./components/Contact/Contact";
 
 const App = () => {
+  const sectionRefs = {
+    hero: useRef(),
+    education: useRef(),
+    skills: useRef(),
+    projects: useRef(),
+    contact: useRef(),
+  };
+
+  const scrollToSection = (section) => {
+    sectionRefs[section].current.scrollIntoView({
+      behavior: "smooth",
+    });
+  };
+
   return (
     <>
       <Options />
-      <Menu />
+      <Menu sectionRefs={sectionRefs} scrollToSection={scrollToSection} />
       <main className="app">
-        <Hero />
-        <Education />
-        <Skills />
-        <Projects />
-        <Contact />
+        <div className="scroll-div" ref={sectionRefs.hero}>
+          <Hero />
+        </div>
+        <div className="scroll-div" ref={sectionRefs.education}>
+          <Education />
+        </div>
+        <div className="scroll-div" ref={sectionRefs.skills}>
+          <Skills />
+        </div>
+        <div className="scroll-div" ref={sectionRefs.projects}>
+          <Projects />
+        </div>
+        <div className="scroll-div" ref={sectionRefs.contact}>
+          <Contact />
+        </div>
       </main>
     </>
   );

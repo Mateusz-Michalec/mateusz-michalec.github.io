@@ -78,6 +78,10 @@ button {
   font-size: 1.8rem;
 }
 
+.scroll-div {
+  scroll-margin: $m--md;
+}
+
 .modal-open {
   overflow: hidden;
 }

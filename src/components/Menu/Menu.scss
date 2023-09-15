@@ -3,6 +3,7 @@
 .menu {
   position: fixed;
   width: 100vw;
+  height: 80px;
   bottom: 0;
   left: 0;
   z-index: 99;
@@ -12,6 +13,12 @@
   background: $c-black-matte-gradient--webkit;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+
+  &__up-btn {
+    position: fixed;
+    right: 3px;
+    bottom: 83px;
+  }
 
   .options {
     display: none;
@@ -59,8 +66,17 @@
     background: $c-dark-green;
     box-shadow: $box-shadow;
 
+    &__up-btn {
+      position: absolute;
+      bottom: $m--sm;
+      right: 50%;
+      transform: translate(50%);
+    }
+
     .options {
       display: flex;
+      flex-direction: column;
+      gap: $m--sm;
     }
 
     &__item {

@@ -72,6 +72,21 @@
     color: $c-text-lighter;
   }
 
+  &__cv {
+    position: relative;
+  }
+
+  &__cv-text {
+    color: $c-text;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.5rem;
+    font-weight: bold;
+    letter-spacing: normal;
+  }
+
   &__btns {
     display: flex;
     gap: $m--lg;

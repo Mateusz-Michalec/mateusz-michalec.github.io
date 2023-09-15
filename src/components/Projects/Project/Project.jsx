@@ -76,7 +76,7 @@ const Project = ({ project }) => {
               <a href={project.link} target="_blank">
                 <i className="bi bi-eye-fill"></i>
               </a>
-              <span>demo</span>
+              <span>Demo</span>
             </button>
             <button className="project__href-btn">
               <a href={project.github} target="_blank">
