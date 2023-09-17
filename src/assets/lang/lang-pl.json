@@ -1,0 +1,56 @@
+{
+  "heroDesc": "Moim celem jest projektowanie stron internetowych poprzez tworzenie intuicyjnych, responsywnych i estetycznych interfejsów, które zapewnią użytkownikom pozytywne doświadczenia.",
+  "educationTitle": "Edukacja",
+  "educationSchoolName1": "Zespół Szkół Technicznych im. Tadeusza Kościuszki w Radomiu",
+  "educationSchoolDegree1": "technik informatyk (E.12, E.13, E.14)",
+  "educationSchoolName2": "Uniwersytet Technologiczno-Humanistyczny im. Kazimierza Pułaskiego w Radomiu",
+  "educationSchoolDegree2": "inżynier",
+  "educationStudies": "Informatyka",
+  "educationType": "Kierunek",
+  "educationDegree": "Tytuł",
+  "educationScholarships": "Stypendia naukowe za wyróżniające wyniki w nauce",
+  "skillsTitle": "Umiejętności",
+  "projectsTitle": "Projekty",
+  "projectsDesktopView": "Duże ekrany",
+  "projectsMobileView": "Małe ekrany",
+  "projectsCode": "Kod",
+  "projects": [
+    {
+      "title": "E-commerce (sklep internetowy)",
+      "features": [
+        "Przeglądanie wielu produktów",
+        "Sortowanie produktów (rosnąco, malejąco, według ceny)",
+        "Podgląd konkretnego produktu",
+        "System ocen produktu",
+        "Dane pobierane z API są zmieniane (rozmiary, cena, dostępność)",
+        "Przeglądane produkty są zapisywane w historii przeglądania",
+        "Produkty można dodawać do ulubionych oraz do koszyka"
+      ]
+    },
+    {
+      "title": "Crypto (wiadomości kryptowalutowe)",
+      "features": [
+        "Przeglądanie światowych statystyk",
+        "Podgląd statystyk kryptowalut",
+        "Szczegółowe dane na temat danej kryptowaluty (w tym wykresy)",
+        "Aktualne wiadomości ze świata na temat rynku kryptowalut",
+        "Wyszukiwanie konkretnej krytowaluty",
+        "Wiadomości na temat konkretnej kryptowaluty"
+      ]
+    },
+    {
+      "title": "Kalendarz",
+      "features": [
+        "Pełnoprawny kalendarz",
+        "Dodawanie własnych zdarzeń",
+        "Zdarzenia są zapisywane w przeglądarce",
+        "Wykorzystanie biblioteki Day.js"
+      ]
+    }
+  ],
+  "contactTitle": "Kontakt",
+  "copyMessage": "Skopiowano do schowka!",
+  "changeLang": "Zmień język",
+  "changeTheme": "Zmień motyw",
+  "downloadCV": "pobierz CV"
+}

@@ -8,6 +8,9 @@ import Education from "./components/Education/Education";
 import Skills from "./components/Skills/Skills";
 import Projects from "./components/Projects/Projects";
 import Contact from "./components/Contact/Contact";
+import { useLanguage } from "./context/LanguageContext";
+import langPL from "./assets/lang/lang-pl.json";
+import langEN from "./assets/lang/lang-en.json";
 
 const App = () => {
   const sectionRefs = {
@@ -18,6 +21,9 @@ const App = () => {
     contact: useRef(),
   };
 
+  const { language } = useLanguage();
+  const languageData = language === "en" ? langEN : langPL;
+
   const scrollToSection = (section) => {
     sectionRefs[section].current.scrollIntoView({
       behavior: "smooth",
@@ -26,23 +32,27 @@ const App = () => {
 
   return (
     <>
-      <Options />
-      <Menu sectionRefs={sectionRefs} scrollToSection={scrollToSection} />
+      <Options languageData={languageData} />
+      <Menu
+        languageData={languageData}
+        sectionRefs={sectionRefs}
+        scrollToSection={scrollToSection}
+      />
       <main className="app">
         <div className="scroll-div" ref={sectionRefs.hero}>
-          <Hero />
+          <Hero languageData={languageData} />
         </div>
         <div className="scroll-div" ref={sectionRefs.education}>
-          <Education />
+          <Education languageData={languageData} />
         </div>
         <div className="scroll-div" ref={sectionRefs.skills}>
-          <Skills />
+          <Skills languageData={languageData} />
         </div>
         <div className="scroll-div" ref={sectionRefs.projects}>
-          <Projects />
+          <Projects languageData={languageData} />
         </div>
         <div className="scroll-div" ref={sectionRefs.contact}>
-          <Contact />
+          <Contact languageData={languageData} />
         </div>
       </main>
     </>

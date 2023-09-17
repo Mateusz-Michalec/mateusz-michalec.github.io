@@ -3,7 +3,7 @@ import images from "../../constans/images";
 import Project from "./Project/Project";
 import "./Projects.scss";
 
-const Projects = () => {
+const Projects = ({ languageData }) => {
   const projects = [images.eStore, images.crypto, images.calendar];
 
   const [projectIndex, setProjectIndex] = useState(0);
@@ -11,7 +11,7 @@ const Projects = () => {
   return (
     <section className="container projects">
       <div className="projects__header">
-        <h2 className="section-title">Projekty</h2>
+        <h2 className="section-title">{languageData.projectsTitle}</h2>
         <div className="projects__btns-control">
           <button
             onClick={() =>
@@ -35,7 +35,11 @@ const Projects = () => {
           </button>
         </div>
       </div>
-      <Project project={projects[projectIndex]} />
+      <Project
+        languageData={languageData}
+        projectIndex={projectIndex}
+        project={projects[projectIndex]}
+      />
     </section>
   );
 };

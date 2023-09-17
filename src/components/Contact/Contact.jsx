@@ -1,7 +1,7 @@
 import React from "react";
 import "./Contact.scss";
 
-const Contact = () => {
+const Contact = ({ languageData }) => {
   const copyToClipboard = (e) => {
     const el = e.currentTarget;
     const text = el.textContent;
@@ -9,7 +9,7 @@ const Contact = () => {
       .writeText(text)
       .then(() => {
         const message = el.nextElementSibling;
-        message.textContent = "Skopiowano do schowka!";
+        message.textContent = languageData.copyMessage;
         message.classList.add("visible");
 
         setTimeout(() => {
@@ -21,7 +21,7 @@ const Contact = () => {
 
   return (
     <section className="container contact">
-      <h2 className="section-title">Kontakt</h2>
+      <h2 className="section-title">{languageData.contactTitle}</h2>
       <div className="contact__btns">
         <button className="contact__btn">
           <i className="bi bi-envelope"></i>

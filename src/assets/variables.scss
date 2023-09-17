@@ -8,6 +8,10 @@ $c-text: rgb(220, 220, 220);
 $c-text-lighter: whitesmoke;
 $background: $c-dark-green;
 
+[data-theme="light"] {
+  $background: rgb(220, 220, 220);
+}
+
 $hero-background-gradient--webkit: -webkit-linear-gradient(
   to right,
   #091418,
@@ -24,9 +28,6 @@ $c-black-matte-gradient: linear-gradient(to bottom, #202020, #172123);
 
 $c-aqua-gradient--webkit: -webkit-linear-gradient(to right, #96deda, #50c9c3);
 $c-aqua-gradient: linear-gradient(to right, #96deda, #50c9c3);
-
-[data-theme="light"] {
-}
 
 // margins
 $m--xs: 0.6rem;

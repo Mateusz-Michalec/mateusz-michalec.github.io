@@ -2,7 +2,7 @@ import React from "react";
 import "./Hero.scss";
 import { images } from "../../constans";
 
-const Hero = () => {
+const Hero = ({ languageData }) => {
   return (
     <section className="hero">
       <div className="hero__gradient" />
@@ -33,17 +33,13 @@ const Hero = () => {
                 <i className="bi bi-github"></i>
               </a>
             </button>
-            <button className="hero__cv">
+            <button title={languageData.downloadCV} className="hero__cv">
               <i className="bi bi-filetype-pdf"></i>
               <span className="hero__cv-text">CV</span>
             </button>
           </div>
 
-          <p className="hero__desc ">
-            "Moim celem jest projektowanie stron internetowych poprzez tworzenie
-            intuicyjnych, responsywnych i estetycznych interfejsów, które
-            zapewnią użytkownikom pozytywne doświadczenia."
-          </p>
+          <p className="hero__desc ">"{languageData.heroDesc}"</p>
         </header>
       </div>
     </section>

@@ -1,6 +1,6 @@
 import React from "react";
 
-const EducationCard = ({ school, years, degree }) => {
+const EducationCard = ({ school, years, degree, languageData }) => {
   return (
     <div className="education__card">
       <i className="bi bi-mortarboard"></i>
@@ -11,12 +11,13 @@ const EducationCard = ({ school, years, degree }) => {
             <span className="education__years">{years}</span>
           </div>
           <p>
-            <span>Kierunek:</span> <b>Informatyka</b>
+            <span>{languageData.educationType}: </span>
+            <b>{languageData.educationStudies}</b>
           </p>
           <p>
-            <span>Tytuł:</span> <b>{degree}</b>
+            <span>{languageData.educationDegree}:</span> <b>{degree}</b>
           </p>
-          <p>Stypendia naukowe za wyróżniające wyniki w nauce</p>
+          <p>{languageData.educationScholarships}</p>
         </header>
       </div>
     </div>

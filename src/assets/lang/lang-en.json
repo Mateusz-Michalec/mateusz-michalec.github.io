@@ -1,0 +1,56 @@
+{
+  "heroDesc": "My goal is to design websites by creating intuitive, responsive, and aesthetically pleasing interfaces that provide users with positive experiences.",
+  "educationTitle": "Education",
+  "educationSchoolName1": "Tadeusz Kościuszko Technical High School in Radom",
+  "educationSchoolDegree1": "IT technician (E.12, E.13, E.14)",
+  "educationSchoolName2": "Kazimierz Pułaski University of Technology and Humanities in Radom",
+  "educationSchoolDegree2": "Engineer",
+  "educationStudies": "Computer Science",
+  "educationType": "Type",
+  "educationDegree": "Degree",
+  "educationScholarships": "Academic scholarships for outstanding academic performance",
+  "skillsTitle": "Skills",
+  "projectsTitle": "Projects",
+  "projectsDesktopView": "Desktop view",
+  "projectsMobileView": "Mobile view",
+  "projectsCode": "Code",
+  "projects": [
+    {
+      "title": "E-commerce (online store)",
+      "features": [
+        "Browsing multiple products",
+        "Sorting products (ascending, descending, by price)",
+        "Viewing a specific product",
+        "Product rating system",
+        "API data changes (sizes, price, availability)",
+        "Viewed products are saved in browsing history",
+        "Adding products to favorites and cart"
+      ]
+    },
+    {
+      "title": "Crypto (cryptocurrency news)",
+      "features": [
+        "Browsing global statistics",
+        "Viewing cryptocurrency statistics",
+        "Detailed data on a specific cryptocurrency (including charts)",
+        "Current news about the cryptocurrency market worldwide",
+        "Searching for a specific cryptocurrency",
+        "News about a specific cryptocurrency"
+      ]
+    },
+    {
+      "title": "Calendar",
+      "features": [
+        "Full-fledged calendar",
+        "Adding custom events",
+        "Events are saved in the browser",
+        "Using the Day.js library"
+      ]
+    }
+  ],
+  "contactTitle": "Contact",
+  "copyMessage": "Copied to the clipboard!",
+  "changeLang": "Change language",
+  "changeTheme": "Change theme",
+  "downloadCV": "Download CV"
+}

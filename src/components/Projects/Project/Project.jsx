@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Project.scss";
 import ProjectModal from "../ProjectModal/ProjectModal";
 
-const Project = ({ project }) => {
+const Project = ({ project, projectIndex, languageData }) => {
   const [isDesktopView, setIsDesktopView] = useState(true);
   const [images, setImages] = useState(project.desktop);
   const [isModal, setIsModal] = useState(false);
@@ -46,7 +46,7 @@ const Project = ({ project }) => {
               }}
               className={`project__view-btn ${isDesktopView ? "" : "grayed"} `}
             >
-              Duże ekrany
+              {languageData.projectsDesktopView}
             </button>
             <button
               onClick={() => {
@@ -56,15 +56,17 @@ const Project = ({ project }) => {
               className={`project__view-btn ${isDesktopView ? "grayed" : ""} `}
             >
               {" "}
-              Małe ekrany
+              {languageData.projectsMobileView}
             </button>
           </div>
         </div>
         <div className="project__features">
           <div>
-            <h2 className="project__name">{project.title}</h2>
+            <h2 className="project__name">
+              {languageData.projects[projectIndex].title}
+            </h2>
             <ul className="project__features-list">
-              {project.features.map((feature) => (
+              {languageData.projects[projectIndex].features.map((feature) => (
                 <li className="project__feature" key={feature}>
                   {feature}
                 </li>
@@ -82,7 +84,7 @@ const Project = ({ project }) => {
               <a href={project.github} target="_blank">
                 <i className="bi bi-github"></i>
               </a>
-              <span>Kod</span>
+              <span>{languageData.projectsCode}</span>
             </button>
           </div>
         </div>

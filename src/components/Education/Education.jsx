@@ -2,22 +2,22 @@ import React from "react";
 import "./Education.scss";
 import EducationCard from "./EducationCard";
 
-const Education = () => {
+const Education = ({ languageData }) => {
   return (
     <section className="container education">
-      <h2 className="section-title">Edukacja</h2>
+      <h2 className="section-title">{languageData.educationTitle}</h2>
       <div className="education__content">
         <EducationCard
-          school={"Zespół Szkół Technicznych im. Tadeusza Kościuszki w Radomiu"}
+          languageData={languageData}
+          school={languageData.educationSchoolName1}
           years={"2015 - 2019"}
-          degree={"technik informatyk (E.12, E.13, E.14)"}
+          degree={languageData.educationSchoolDegree1}
         />
         <EducationCard
-          school={
-            "Uniwersytet Technologiczno-Humanistyczny im. Kazimierza Pułaskiego w Radomiu"
-          }
+          languageData={languageData}
+          school={languageData.educationSchoolName2}
           years={"2019 - 2023"}
-          degree={"inżynier"}
+          degree={languageData.educationSchoolDegree2}
         />
       </div>
     </section>

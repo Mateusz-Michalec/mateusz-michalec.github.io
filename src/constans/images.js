@@ -22,16 +22,6 @@ import icons from "./icons";
 const eStore = {
   mobile: [es_m_1, es_m_2, es_m_3],
   desktop: [es_d_1, es_d_2, es_d_3, es_d_4, es_d_5],
-  title: "E-commerce (sklep internetowy)",
-  features: [
-    "Przeglądanie wielu produktów",
-    "Sortowanie produktów (rosnąco, malejąco, według ceny)",
-    "Podgląd konkretnego produktu",
-    "System ocen produktu",
-    "Dane pobierane z API są zmieniane (rozmiary, cena, dostępność)",
-    "Przeglądane produkty są zapisywane w historii przeglądania",
-    "Produkty można dodawać do ulubionych oraz do koszyka",
-  ],
   technologies: [
     icons.skills[2],
     icons.skills[3],
@@ -46,15 +36,6 @@ const eStore = {
 const crypto = {
   mobile: [cr_m_1, cr_m_2, cr_m_3],
   desktop: [cr_d_1, cr_d_2, cr_d_3],
-  title: "Crypto (wiadomości kryptowalutowe)",
-  features: [
-    "Przeglądanie światowych statystyk",
-    "Podgląd statystyk kryptowalut",
-    "Szczegółowe dane na temat danej kryptowaluty, w tym wykresy",
-    "Aktualne wiadomości ze świata na temat rynku kryptowalut",
-    "Wyszukiwanie konkretnej krytowaluty",
-    "Wiadomości na temat konkretnej kryptowaluty",
-  ],
   technologies: [
     icons.skills[2],
     icons.skills[3],
@@ -68,13 +49,6 @@ const crypto = {
 const calendar = {
   mobile: [ca_m_1],
   desktop: [ca_d_1, ca_d_2],
-  title: "Kalendarz",
-  features: [
-    "Pełnoprawny kalendarz",
-    "Dodawanie własnych zdarzeń",
-    "Zdarzenia są zapisywane w przeglądarce",
-    "Wykorzystanie biblioteki Day.js",
-  ],
   technologies: [icons.skills[2], icons.skills[5], icons.skills[6]],
   github: "https://github.com/Mateusz-Michalec/calendar",
   demo: "",
