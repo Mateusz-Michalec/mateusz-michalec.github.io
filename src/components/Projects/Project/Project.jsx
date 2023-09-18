@@ -19,6 +19,7 @@ const Project = ({ project, projectIndex, languageData }) => {
           <div className="project__technologies">
             {project.technologies.map((tech) => (
               <img
+                loading="lazy"
                 key={tech.text}
                 className="project__technology"
                 src={tech.icon}
@@ -29,12 +30,13 @@ const Project = ({ project, projectIndex, languageData }) => {
           </div>
           <div className="project__preview-img-wrapper">
             <img
+              loading="lazy"
               className="project__preview-img"
               src={images[0]}
               alt={project.desc}
               onClick={() => {
-                setIsModal(true);
                 document.body.style.overflow = "hidden";
+                setIsModal(true);
               }}
             />
           </div>

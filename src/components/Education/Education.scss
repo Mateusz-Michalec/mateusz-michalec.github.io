@@ -9,18 +9,18 @@
 
   &__years {
     font-size: $fs--xs;
-    color: silver;
   }
 
   &__card {
     display: flex;
     gap: $m--md;
     height: 100%;
-    background: $c-black-matte;
-    background: $c-black-matte-gradient;
-    background: $c-black-matte-gradient--webkit;
+    background: var(--c-primary);
+    background: var(--c-primary-gradient--webkit);
+    background: var(--c-primary-gradient);
     padding: $p--lg;
     border-radius: $p--xs;
+    color: var(--c-text--inBox);
 
     &-content {
       display: flex;
@@ -29,7 +29,7 @@
     }
 
     .bi {
-      color: $c-aqua;
+      color: $c-accent;
       margin-left: $m--xs;
       min-width: 2rem;
     }

@@ -8,6 +8,14 @@
   padding-top: $m--sm;
   padding-bottom: $m--sm;
 
+  .bi {
+    color: var(--c-text--inBox);
+
+    &:hover {
+      color: $c-accent;
+    }
+  }
+
   &__flag {
     height: 2rem;
     width: 2rem;

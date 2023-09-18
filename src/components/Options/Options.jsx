@@ -11,7 +11,10 @@ const Options = ({ languageData }) => {
     if (theme === "dark") {
       setTheme("light");
       document.querySelector("#root").setAttribute("data-theme", "light");
-    } else setTheme("dark");
+    } else {
+      setTheme("dark");
+      document.querySelector("#root").setAttribute("data-theme", "dark");
+    }
   };
 
   return (

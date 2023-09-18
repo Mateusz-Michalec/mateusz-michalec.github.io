@@ -3,10 +3,11 @@
 .hero {
   &__gradient {
     position: absolute;
-    background: $hero-background-gradient;
-    filter: blur(80px);
+    background: var(--hero-background-gradient--webkit);
+    background: var(--hero-background-gradient);
+    filter: blur(100px);
     opacity: 0.5;
-    width: 90%;
+    width: 80%;
     height: 15rem;
   }
 
@@ -23,8 +24,8 @@
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    border: 6px solid $c-aqua;
-    filter: drop-shadow(0 0 12px $c-aqua);
+    border: 6px solid $c-accent;
+    filter: drop-shadow(0 0 12px $c-accent);
     margin: auto;
   }
 
@@ -40,17 +41,13 @@
     position: relative;
     font-size: 1.8rem;
     letter-spacing: 3px;
-    border-right: 5px solid $c-aqua;
+    border-right: 5px solid $c-accent;
     padding-left: 5px;
     width: 100%;
     white-space: nowrap;
     overflow: hidden;
     animation: typing 3s forwards;
-    background: $c-aqua-gradient;
-    background: $c-aqua-gradient--webkit;
-    color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
+    color: $c-accent;
 
     @keyframes typing {
       0% {
@@ -63,13 +60,13 @@
   }
 
   &__job {
-    background: $c-black-matte;
-    background: $c-black-matte-gradient;
-    background: $c-black-matte-gradient--webkit;
+    background: var(--c-primary);
+    background: var(--c-primary-gradient--webkit);
+    background: var(--c-primary-gradient);
     padding: $m--xs $m--sm;
     border-radius: $p--xs;
     letter-spacing: 3px;
-    color: $c-text-lighter;
+    color: var(--c-text--inBox);
   }
 
   &__cv {
@@ -77,7 +74,7 @@
   }
 
   &__cv-text {
-    color: $c-text;
+    color: var(--c-text);
     position: absolute;
     top: 45%;
     left: 50%;
@@ -94,14 +91,15 @@
   }
 
   &__desc {
-    background: $c-black-matte;
-    background: $c-black-matte-gradient;
-    background: $c-black-matte-gradient--webkit;
+    background: var(--c-primary);
+    background: var(--c-primary-gradient--webkit);
+    background: var(--c-primary-gradient);
     padding: $m--sm;
-    border-left: 6px solid $c-aqua;
+    border-left: 6px solid $c-accent;
     font-style: italic;
     line-height: $lh-text;
     max-width: $max-w--desktop;
+    color: var(--c-text--inBox);
   }
 }
 

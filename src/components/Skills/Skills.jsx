@@ -10,7 +10,7 @@ const Skills = ({ languageData }) => {
         <div className="skills__cards">
           {icons.skills.map((skill) => (
             <div className="skills__skill" key={skill.text}>
-              <img src={skill.icon} alt={skill.alt} />
+              <img loading="lazy" src={skill.icon} alt={skill.alt} />
               <h5 className="skills__skill-name">{skill.text}</h5>
             </div>
           ))}

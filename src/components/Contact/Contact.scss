@@ -13,12 +13,20 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      color: $c-text;
-      background: $c-black-matte;
-      background: $c-black-matte-gradient;
-      background: $c-black-matte-gradient--webkit;
+      color: var(--c-text--inBox);
+      background: var(--c-primary);
+      background: var(--c-primary-gradient--webkit);
+      background: var(--c-primary-gradient);
       padding: $p--md;
-      border-left: 6px solid $c-aqua;
+      border-left: 6px solid $c-accent;
+
+      &:hover * {
+        color: $c-accent !important;
+      }
+
+      .bi {
+        color: var(--c-text--inBox);
+      }
     }
   }
 }

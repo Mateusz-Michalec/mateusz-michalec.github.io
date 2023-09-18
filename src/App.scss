@@ -19,7 +19,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: $c-aqua;
+  background: $c-accent;
 }
 
 ::-webkit-scrollbar-track {
@@ -29,15 +29,15 @@
 // General
 
 #root {
-  background: $background;
+  background: var(--background);
   min-height: 100vh;
-  color: $c-text;
+  color: var(--c-text);
   font-family: "League Spartan", sans-serif;
   padding-bottom: 7.5rem;
-}
 
-html {
-  overflow-x: hidden;
+  &[data-theme="light"] .hero__gradient {
+    display: none;
+  }
 }
 
 .app {
@@ -57,23 +57,23 @@ button {
   }
 
   &:hover * {
-    color: $c-aqua;
+    color: $c-accent;
   }
 }
 
 .bi {
-  color: $c-text;
+  color: var(--c-text);
   font-size: 2rem;
   transition: $transition-fast;
 
   &:hover {
-    color: $c-aqua;
+    color: $c-accent !important;
   }
 }
 
 .section-title {
   letter-spacing: 3px;
-  color: $c-aqua;
+  color: $c-accent;
   margin-bottom: $m--md;
   font-size: 1.8rem;
 }
