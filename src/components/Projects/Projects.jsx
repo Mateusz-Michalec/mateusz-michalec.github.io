@@ -1,16 +1,16 @@
-import React, { useState } from "react";
+import React, { forwardRef, useState } from "react";
 import images from "../../constans/images";
 import Project from "./Project/Project";
 import "./Projects.scss";
 
-const Projects = ({ languageData }) => {
+const Projects = forwardRef(({ languageData }, ref) => {
   const projects = [images.eStore, images.crypto, images.calendar];
 
   const [projectIndex, setProjectIndex] = useState(0);
 
   return (
-    <section className="container projects">
-      <div className="projects__header">
+    <section ref={ref} className="container projects">
+      <div className="projects__header hidden-opacity">
         <h2 className="section-title">{languageData.projectsTitle}</h2>
         <div className="projects__btns-control">
           <button
@@ -42,6 +42,6 @@ const Projects = ({ languageData }) => {
       />
     </section>
   );
-};
+});
 
 export default Projects;

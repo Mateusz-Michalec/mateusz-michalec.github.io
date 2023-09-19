@@ -1,12 +1,14 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import "./Education.scss";
 import EducationCard from "./EducationCard";
 
-const Education = ({ languageData }) => {
+const Education = forwardRef(({ languageData }, ref) => {
   return (
-    <section className="container education">
-      <h2 className="section-title">{languageData.educationTitle}</h2>
-      <div className="education__content">
+    <section ref={ref} className="container education">
+      <h2 className="section-title hidden-opacity">
+        {languageData.educationTitle}
+      </h2>
+      <div className="education__content hidden-fadeIn-right">
         <EducationCard
           languageData={languageData}
           school={languageData.educationSchoolName1}
@@ -22,6 +24,6 @@ const Education = ({ languageData }) => {
       </div>
     </section>
   );
-};
+});
 
 export default Education;

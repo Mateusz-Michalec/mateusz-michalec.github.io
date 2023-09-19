@@ -13,6 +13,10 @@
   letter-spacing: 1px;
 }
 
+* {
+  transition: background-color 0.6s ease-in-out;
+}
+
 ::-webkit-scrollbar {
   width: 6px;
   background: $c-dark-green;
@@ -34,8 +38,13 @@
   color: var(--c-text);
   font-family: "League Spartan", sans-serif;
   padding-bottom: 7.5rem;
+  overflow-x: hidden;
 
   &[data-theme="light"] .hero__gradient {
+    display: none;
+  }
+
+  &[data-modal="open"] .menu {
     display: none;
   }
 }
@@ -44,6 +53,10 @@
   display: flex;
   flex-direction: column;
   gap: $m--lg;
+}
+
+section {
+  scroll-margin-top: $m--md;
 }
 
 button {
@@ -78,10 +91,6 @@ button {
   font-size: 1.8rem;
 }
 
-.scroll-div {
-  scroll-margin: $m--md;
-}
-
 .modal-open {
   overflow: hidden;
 }
@@ -95,15 +104,33 @@ button {
   visibility: hidden;
   bottom: 0;
   opacity: 0;
-  left: 50%;
+  left: 0;
   width: 100%;
-  transform: translate(-50%);
 
   &.visible {
     visibility: visible;
     opacity: 1;
-    bottom: -1.5rem;
+    bottom: -$m--sm;
   }
+}
+
+// on scroll animations
+
+.visible {
+  opacity: 1 !important;
+  transform: none !important;
+  filter: none !important;
+}
+
+.hidden-opacity {
+  transition: $transition-very-slow;
+  opacity: 0;
+}
+
+.hidden-fadeIn-right {
+  @extend .hidden-opacity;
+  transform: translate(10%);
+  filter: blur(10px);
 }
 
 .container {

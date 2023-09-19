@@ -9,10 +9,11 @@ const Project = ({ project, projectIndex, languageData }) => {
 
   useEffect(() => {
     setImages(project.desktop);
+    setIsDesktopView(true);
   }, [project]);
 
   return (
-    <article className="project">
+    <article className="project hidden-opacity">
       <ProjectModal images={images} isModal={isModal} setIsModal={setIsModal} />
       <header className="project__header">
         <div className="project__preview">
@@ -37,6 +38,9 @@ const Project = ({ project, projectIndex, languageData }) => {
               onClick={() => {
                 document.body.style.overflow = "hidden";
                 setIsModal(true);
+                document
+                  .getElementById("root")
+                  .setAttribute("data-modal", "open");
               }}
             />
           </div>

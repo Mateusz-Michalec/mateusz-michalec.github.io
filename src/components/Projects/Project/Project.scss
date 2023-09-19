@@ -3,6 +3,7 @@
 .project {
   border-radius: $p--md;
   min-height: 28rem;
+  animation-delay: 200ms;
 
   @extend .project__header;
 

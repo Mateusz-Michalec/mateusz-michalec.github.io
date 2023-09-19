@@ -1,7 +1,7 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import "./Contact.scss";
 
-const Contact = ({ languageData }) => {
+const Contact = forwardRef(({ languageData }, ref) => {
   const copyToClipboard = (e) => {
     const el = e.currentTarget;
     const text = el.textContent;
@@ -20,12 +20,14 @@ const Contact = ({ languageData }) => {
   };
 
   return (
-    <section className="container contact">
-      <h2 className="section-title">{languageData.contactTitle}</h2>
-      <div className="contact__btns">
-        <button className="contact__btn">
+    <section ref={ref} className="container contact">
+      <h2 className="section-title hidden-opacity">
+        {languageData.contactTitle}
+      </h2>
+      <div className="contact__btns hidden-fadeIn-right">
+        <button className="contact__btn ">
           <i className="bi bi-envelope"></i>
-          <h4 onClick={(e) => copyToClipboard(e)}>
+          <h4 className="contact__btn-text" onClick={(e) => copyToClipboard(e)}>
             mateusz.michalec.pl@gmail.com{" "}
             <i className="bi bi-files copy-icon"></i>
           </h4>
@@ -33,7 +35,7 @@ const Contact = ({ languageData }) => {
         </button>
         <button className="contact__btn">
           <i className="bi bi-telephone"></i>
-          <h4 onClick={(e) => copyToClipboard(e)}>
+          <h4 className="contact__btn-text" onClick={(e) => copyToClipboard(e)}>
             579 965 435 <i className="bi bi-files copy-icon"></i>
           </h4>
           <p className="copy-message"></p>
@@ -42,7 +44,7 @@ const Contact = ({ languageData }) => {
           <a href="https://github.com/Mateusz-Michalec" target="_blank">
             <i className="bi bi-github"></i>
           </a>
-          <h4 onClick={(e) => copyToClipboard(e)}>
+          <h4 className="contact__btn-text" onClick={(e) => copyToClipboard(e)}>
             Mateusz-Michalec <i className="bi bi-files copy-icon"></i>
           </h4>
           <p className="copy-message"></p>
@@ -50,6 +52,6 @@ const Contact = ({ languageData }) => {
       </div>
     </section>
   );
-};
+});
 
 export default Contact;

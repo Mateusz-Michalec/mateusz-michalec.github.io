@@ -25,7 +25,8 @@
     height: 200px;
     border-radius: 50%;
     border: 6px solid $c-accent;
-    filter: drop-shadow(0 0 12px $c-accent);
+
+    box-shadow: 0 0 12px $c-accent;
     margin: auto;
   }
 
@@ -35,6 +36,7 @@
     justify-content: center;
     align-items: center;
     gap: $m--xs;
+    animation-delay: 200ms;
   }
 
   &__name {

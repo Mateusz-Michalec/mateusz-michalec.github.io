@@ -9,6 +9,7 @@
     .contact__btn {
       position: relative;
       display: flex;
+      cursor: default;
       gap: $m--xs;
       flex-direction: column;
       justify-content: center;
@@ -19,6 +20,10 @@
       background: var(--c-primary-gradient);
       padding: $p--md;
       border-left: 6px solid $c-accent;
+
+      &-text {
+        cursor: pointer;
+      }
 
       &:hover * {
         color: $c-accent !important;

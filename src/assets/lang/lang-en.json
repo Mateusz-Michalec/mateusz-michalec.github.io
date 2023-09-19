@@ -49,8 +49,5 @@
     }
   ],
   "contactTitle": "Contact",
-  "copyMessage": "Copied to the clipboard!",
-  "changeLang": "Change language",
-  "changeTheme": "Change theme",
-  "downloadCV": "Download CV"
+  "copyMessage": "Copied to the clipboard!"
 }

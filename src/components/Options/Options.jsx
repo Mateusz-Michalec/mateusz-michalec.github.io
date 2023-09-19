@@ -20,8 +20,12 @@ const Options = ({ languageData }) => {
   return (
     <aside className="options container">
       <button
-        title={languageData.changeLang}
-        onClick={() => setLanguage((prev) => (prev === "pl" ? "en" : "pl"))}
+        onClick={() => {
+          document
+            .querySelectorAll(".visible")
+            .forEach((el) => el.classList.remove("visible"));
+          setLanguage((prev) => (prev === "pl" ? "en" : "pl"));
+        }}
       >
         <img
           className="options__flag"
@@ -29,10 +33,7 @@ const Options = ({ languageData }) => {
           alt={language === "pl" ? "Flaga Polski" : "Flaga Wielkiej Brytanii"}
         />
       </button>
-      <button
-        onClick={() => handleThemeChange()}
-        title={languageData.changeTheme}
-      >
+      <button onClick={() => handleThemeChange()}>
         {theme === "dark" ? (
           <i className="bi bi-sun-fill" />
         ) : (

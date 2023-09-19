@@ -1,19 +1,19 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import "./Hero.scss";
 import { images } from "../../constans";
 
-const Hero = ({ languageData }) => {
+const Hero = forwardRef(({ languageData }, ref) => {
   return (
-    <section className="hero">
+    <section className="hero ">
       <div className="hero__gradient" />
-      <div className="container">
+      <div ref={ref} className="container">
         <img
           src={images.myPhoto}
-          className="hero__img"
+          className="hero__img hidden-opacity"
           alt="Mateusz Michalec"
         />
 
-        <header className="hero__header">
+        <header className="hero__header hidden-opacity">
           <h1 className="hero__name">Mateusz Michalec</h1>
           <h5 className="hero__job">Frontend developer</h5>
           <div className="hero__btns">
@@ -33,7 +33,7 @@ const Hero = ({ languageData }) => {
                 <i className="bi bi-github"></i>
               </a>
             </button>
-            <button title={languageData.downloadCV} className="hero__cv">
+            <button className="hero__cv">
               <i className="bi bi-filetype-pdf"></i>
               <span className="hero__cv-text">CV</span>
             </button>
@@ -44,6 +44,6 @@ const Hero = ({ languageData }) => {
       </div>
     </section>
   );
-};
+});
 
 export default Hero;

@@ -11,6 +11,7 @@ import Contact from "./components/Contact/Contact";
 import { useLanguage } from "./context/LanguageContext";
 import langPL from "./assets/lang/lang-pl.json";
 import langEN from "./assets/lang/lang-en.json";
+import useInView from "./hooks/useInView";
 
 const App = () => {
   const sectionRefs = {
@@ -23,6 +24,14 @@ const App = () => {
 
   const { language } = useLanguage();
   const languageData = language === "en" ? langEN : langPL;
+
+  const intersection = useInView([
+    sectionRefs.hero,
+    sectionRefs.education,
+    sectionRefs.skills,
+    sectionRefs.projects,
+    sectionRefs.contact,
+  ]);
 
   const scrollToSection = (section) => {
     sectionRefs[section].current.scrollIntoView({
@@ -39,21 +48,11 @@ const App = () => {
         scrollToSection={scrollToSection}
       />
       <main className="app">
-        <div className="scroll-div" ref={sectionRefs.hero}>
-          <Hero languageData={languageData} />
-        </div>
-        <div className="scroll-div" ref={sectionRefs.education}>
-          <Education languageData={languageData} />
-        </div>
-        <div className="scroll-div" ref={sectionRefs.skills}>
-          <Skills languageData={languageData} />
-        </div>
-        <div className="scroll-div" ref={sectionRefs.projects}>
-          <Projects languageData={languageData} />
-        </div>
-        <div className="scroll-div" ref={sectionRefs.contact}>
-          <Contact languageData={languageData} />
-        </div>
+        <Hero ref={sectionRefs.hero} languageData={languageData} />
+        <Education ref={sectionRefs.education} languageData={languageData} />
+        <Skills ref={sectionRefs.skills} languageData={languageData} />
+        <Projects ref={sectionRefs.projects} languageData={languageData} />
+        <Contact ref={sectionRefs.contact} languageData={languageData} />
       </main>
     </>
   );

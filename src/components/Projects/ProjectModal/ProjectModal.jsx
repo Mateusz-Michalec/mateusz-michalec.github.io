@@ -13,6 +13,7 @@ const ProjectModal = ({ images, isModal, setIsModal }) => {
           onClick={() => {
             setIsModal(false);
             document.body.style.overflow = "visible";
+            document.getElementById("root").removeAttribute("data-modal");
           }}
         >
           <i className="bi bi-x-circle-fill" />
