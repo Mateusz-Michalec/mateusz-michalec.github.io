@@ -81,7 +81,7 @@ const Project = ({ project, projectIndex, languageData }) => {
           </div>
           <div className="project__href-btns">
             <button className="project__href-btn">
-              <a href={project.link} target="_blank">
+              <a href={project.demo} target="_blank">
                 <i className="bi bi-eye-fill"></i>
               </a>
               <span>Demo</span>

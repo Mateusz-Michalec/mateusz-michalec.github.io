@@ -30,7 +30,7 @@ const eStore = {
     icons.skills[7],
   ],
   github: "https://github.com/Mateusz-Michalec/eStore",
-  demo: "",
+  demo: "https://mateusz-michalec.github.io/eStore/",
 };
 
 const crypto = {
@@ -43,7 +43,7 @@ const crypto = {
     icons.skills[6],
   ],
   github: "https://github.com/Mateusz-Michalec/crypto",
-  demo: "",
+  demo: "https://mateusz-michalec.github.io/crypto/",
 };
 
 const calendar = {
@@ -51,7 +51,7 @@ const calendar = {
   desktop: [ca_d_1, ca_d_2],
   technologies: [icons.skills[2], icons.skills[5], icons.skills[6]],
   github: "https://github.com/Mateusz-Michalec/calendar",
-  demo: "",
+  demo: "https://mateusz-michalec.github.io/calendar/",
 };
 
 export default {
