@@ -2,10 +2,11 @@ import React, { useEffect, useRef } from "react";
 import { useLanguage } from "../context/LanguageContext";
 
 const useInView = (refs) => {
-  const remainingElements = useRef(refs.length);
+  let remainingElements = useRef(refs.length);
   const { language } = useLanguage();
 
   useEffect(() => {
+    remainingElements.current = refs.length;
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {

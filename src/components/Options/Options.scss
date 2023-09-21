@@ -9,11 +9,7 @@
   padding-bottom: $m--sm;
 
   .bi {
-    color: var(--c-text--inBox);
-
-    &:hover {
-      color: $c-accent;
-    }
+    color: var(--c-text);
   }
 
   &__flag {

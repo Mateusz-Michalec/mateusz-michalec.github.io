@@ -34,8 +34,13 @@ const Hero = forwardRef(({ languageData }, ref) => {
               </a>
             </button>
             <button className="hero__cv">
-              <i className="bi bi-filetype-pdf"></i>
-              <span className="hero__cv-text">CV</span>
+              <a
+                href="https://drive.google.com/file/d/15AA3DqkPOomysj90bT-u1Q8AR-9Ter5t/view?usp=sharing"
+                target="_blank"
+              >
+                <i className="bi bi-filetype-pdf"></i>
+                <span className="hero__cv-text">CV</span>
+              </a>
             </button>
           </div>
 
