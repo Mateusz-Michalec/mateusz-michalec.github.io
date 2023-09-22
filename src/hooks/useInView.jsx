@@ -1,12 +1,10 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect } from "react";
 import { useLanguage } from "../context/LanguageContext";
 
 const useInView = (refs) => {
-  let remainingElements = useRef(refs.length);
   const { language } = useLanguage();
 
   useEffect(() => {
-    remainingElements.current = refs.length;
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -14,8 +12,6 @@ const useInView = (refs) => {
           Array.from(children).forEach((child) =>
             child.classList.add("visible")
           );
-          remainingElements.current -= 1;
-          if (remainingElements.current === 0) observer.disconnect();
         }
       });
     });
@@ -27,7 +23,7 @@ const useInView = (refs) => {
     return () => observer.disconnect();
   }, [language]);
 
-  return remainingElements.current;
+  return null;
 };
 
 export default useInView;

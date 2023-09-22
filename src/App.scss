@@ -73,11 +73,6 @@ button {
 .bi {
   color: var(--c-text);
   font-size: 2rem;
-  transition: $transition-fast;
-
-  &:hover {
-    color: $c-accent !important;
-  }
 }
 
 .section-title {
@@ -112,14 +107,7 @@ button {
 
 // on scroll animations
 
-.visible {
-  opacity: 1 !important;
-  transform: none !important;
-  filter: none !important;
-}
-
 .hidden-opacity {
-  transition: $transition-very-slow;
   opacity: 0;
 }
 
@@ -127,6 +115,18 @@ button {
   @extend .hidden-opacity;
   transform: translate(10%);
   filter: blur(10px);
+}
+
+@keyframes showElement {
+  100% {
+    opacity: 1;
+    transform: none;
+    filter: none;
+  }
+}
+
+.visible {
+  animation: showElement 1s ease-in-out forwards;
 }
 
 .container {

@@ -131,13 +131,12 @@
     padding: $p--xxl;
     &__header {
       flex-direction: row;
-      justify-content: center;
       align-items: center;
-      gap: $m--lg;
     }
 
     &__preview-img-wrapper {
-      max-height: 250px;
+      max-height: 240px;
+      max-width: 750px;
     }
 
     &__preview {
