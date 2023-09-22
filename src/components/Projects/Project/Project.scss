@@ -67,7 +67,6 @@
       align-items: center;
       color: var(--c-text);
       font-weight: 600;
-      transition: $transition-fast;
     }
   }
 
@@ -83,9 +82,11 @@
     -ms-overflow-style: none;
     border-bottom-left-radius: $p--md;
     border-bottom-right-radius: $p--md;
+    border: 1px solid $c-medium-green--dark;
   }
 
   &__preview-img {
+    display: block;
     width: 100%;
     cursor: pointer;
     border-bottom-left-radius: $p--md;

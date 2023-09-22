@@ -1,13 +1,7 @@
-$c-accent: #4cc5bf;
-$c-accent-gradient--webkit: -webkit-linear-gradient(
-  to right,
-  #96deda,
-  $c-accent
-);
-$c-accent-gradient: linear-gradient(to right, #96deda, $c-accent);
+$c-accent: #00c5bb;
 
-$c-medium-green: #203a43;
-$c-medium-green--dark: #192e36;
+$c-medium-green: #284a55;
+$c-medium-green--dark: #223e47;
 $c-dark-green: #091418;
 
 :root {
@@ -37,12 +31,12 @@ $c-dark-green: #091418;
 }
 
 [data-theme="light"] {
-  --c-text: #27454e;
-  --c-text--inBox: #eeeeee;
-  --background: #eeeeee;
+  --c-text: #37606b;
+  --c-text--inBox: white;
+  --background: white;
 
-  --c-primary: #345a66;
-  --c-primary--dark: #27454e;
+  --c-primary: #447785;
+  --c-primary--dark: #37606b;
   --c-primary-gradient: linear-gradient(
     to bottom,
     var(--c-primary),
