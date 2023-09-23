@@ -54,19 +54,20 @@
     gap: $m--md;
   }
 
-  &__href-btns {
+  &__href-links {
     display: flex;
     justify-content: center;
     gap: $m--lg;
     margin-top: $m--md;
 
-    .project__href-btn {
+    .project__href-link {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       color: var(--c-text);
       font-weight: 600;
+      font-size: small;
     }
   }
 
@@ -104,6 +105,7 @@
       background-color: $c-medium-green;
       padding: $p--sm $p--md;
       border-radius: $p--md;
+      border: 1px solid transparent;
 
       transition: $transition-fast;
 
@@ -111,10 +113,10 @@
         background-color: $c-medium-green !important;
       }
 
-      &.grayed {
+      &.unactive {
         background-color: unset;
         color: var(--c-text);
-        outline: 1px solid $c-medium-green;
+        border: 1px solid $c-medium-green;
 
         &:hover {
           color: var(--c-text--inBox);

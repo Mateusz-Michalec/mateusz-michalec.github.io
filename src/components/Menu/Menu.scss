@@ -3,7 +3,7 @@
 .menu {
   position: fixed;
   width: 100vw;
-  height: 80px;
+  height: $h-menu;
   bottom: 0;
   left: 0;
   z-index: 99;
@@ -47,10 +47,6 @@
 
     &:hover {
       background: var(--background);
-
-      .bi {
-        color: $c-accent;
-      }
     }
   }
 }
@@ -81,10 +77,6 @@
 
       .bi {
         color: var(--c-text--inBox);
-
-        &:hover {
-          color: $c-accent;
-        }
       }
     }
 

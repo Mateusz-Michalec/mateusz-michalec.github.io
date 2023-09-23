@@ -38,9 +38,6 @@ const Project = ({ project, projectIndex, languageData }) => {
               onClick={() => {
                 document.body.style.overflow = "hidden";
                 setIsModal(true);
-                document
-                  .getElementById("root")
-                  .setAttribute("data-modal", "open");
               }}
             />
           </div>
@@ -50,7 +47,9 @@ const Project = ({ project, projectIndex, languageData }) => {
                 setIsDesktopView(true);
                 setImages(project.desktop);
               }}
-              className={`project__view-btn ${isDesktopView ? "" : "grayed"} `}
+              className={`project__view-btn ${
+                isDesktopView ? "" : "unactive"
+              } `}
             >
               {languageData.projectsDesktopView}
             </button>
@@ -59,7 +58,9 @@ const Project = ({ project, projectIndex, languageData }) => {
                 setIsDesktopView(false);
                 setImages(project.mobile);
               }}
-              className={`project__view-btn ${isDesktopView ? "grayed" : ""} `}
+              className={`project__view-btn ${
+                isDesktopView ? "unactive" : ""
+              } `}
             >
               {" "}
               {languageData.projectsMobileView}
@@ -79,19 +80,24 @@ const Project = ({ project, projectIndex, languageData }) => {
               ))}
             </ul>
           </div>
-          <div className="project__href-btns">
-            <button className="project__href-btn">
-              <a href={project.demo} target="_blank">
-                <i className="bi bi-eye-fill"></i>
-              </a>
+          <div className="project__href-links">
+            <a
+              className="project__href-link"
+              href={project.demo}
+              target="_blank"
+            >
+              <i className="bi bi-eye-fill"></i>
               <span>Demo</span>
-            </button>
-            <button className="project__href-btn">
-              <a href={project.github} target="_blank">
-                <i className="bi bi-github"></i>
-              </a>
+            </a>
+
+            <a
+              className="project__href-link"
+              href={project.github}
+              target="_blank"
+            >
+              <i className="bi bi-github"></i>
               <span>{languageData.projectsCode}</span>
-            </button>
+            </a>
           </div>
         </div>
       </header>
