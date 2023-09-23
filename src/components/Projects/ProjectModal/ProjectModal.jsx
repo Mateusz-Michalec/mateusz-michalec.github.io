@@ -28,6 +28,7 @@ const ProjectModal = ({ images, isModal, setIsModal }) => {
 
   useEffect(() => {
     if (isModal && modalRef.current) {
+      modalRef.current.classList.add("show");
       modalRef.current.focus();
       window.addEventListener("keydown", handleTabDown);
     }
@@ -45,6 +46,7 @@ const ProjectModal = ({ images, isModal, setIsModal }) => {
         <button
           onClick={() => {
             setIsModal(false);
+            modalRef.current.classList.remove("show");
             document.body.style.overflow = "visible";
           }}
         >
@@ -65,7 +67,6 @@ const ProjectModal = ({ images, isModal, setIsModal }) => {
               if (prev === 0) return images.length - 1;
               else return prev - 1;
             });
-            modal.current.scrollTop = 0;
           }}
           className="project__modal-btn"
         >
@@ -77,7 +78,6 @@ const ProjectModal = ({ images, isModal, setIsModal }) => {
               if (prev === images.length - 1) return 0;
               else return prev + 1;
             });
-            modal.current.scrollTop = 0;
           }}
         >
           <i className="bi bi-arrow-right-circle-fill" />

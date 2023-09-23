@@ -6,14 +6,18 @@
   border: none;
   box-shadow: none;
   width: 100vw;
-  height: 100vh;
+  height: 100dvh;
   z-index: 999;
+
+  &.show {
+    display: grid;
+    grid-template-rows: 90px auto 90px;
+  }
 
   background-color: var(--background);
 
   &-img-wrapper {
-    overflow-y: scroll;
-    height: calc(100vh - 180px);
+    overflow-y: auto;
   }
 
   &-img {
@@ -26,8 +30,7 @@
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    padding: $p--lg;
-    height: 90px;
+    padding: $p--md;
     background: var(--c-primary--dark);
 
     .bi {
@@ -42,8 +45,7 @@
     gap: $m--lg;
     width: 100%;
     background: var(--c-primary--dark);
-    padding: $p--lg;
-    height: 90px;
+    padding: $p--md;
 
     .bi {
       font-size: 2.5rem;
