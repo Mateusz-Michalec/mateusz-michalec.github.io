@@ -16,6 +16,15 @@
   "projectsCode": "Kod",
   "projects": [
     {
+      "title": "Radomski Dzień Inżyniera",
+      "features": [
+        "Projekt komercyjny",
+        "Aplikacja promocyjna/eventowa",
+        "Przegląd programu imprezy, mówców",
+        "Interaktywna mapa stoisk"
+      ]
+    },
+    {
       "title": "E-commerce (sklep internetowy)",
       "features": [
         "Przeglądanie wielu produktów",

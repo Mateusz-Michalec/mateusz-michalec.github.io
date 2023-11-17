@@ -4,7 +4,7 @@ import Project from "./Project/Project";
 import "./Projects.scss";
 
 const Projects = forwardRef(({ languageData }, ref) => {
-  const projects = [images.eStore, images.crypto, images.calendar];
+  const projects = [images.rdi, images.eStore, images.crypto, images.calendar];
 
   const [projectIndex, setProjectIndex] = useState(0);
 

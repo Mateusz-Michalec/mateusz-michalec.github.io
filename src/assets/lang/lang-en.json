@@ -16,6 +16,15 @@
   "projectsCode": "Code",
   "projects": [
     {
+      "title": "Radom Engineer Day",
+      "features": [
+        "Commercial project",
+        "Promotional/event application",
+        "Overview of event program, speakers",
+        "Interactive map of stands"
+      ]
+    },
+    {
       "title": "E-commerce (online store)",
       "features": [
         "Browsing multiple products",

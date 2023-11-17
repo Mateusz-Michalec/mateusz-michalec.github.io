@@ -35,7 +35,7 @@ const Hero = forwardRef(({ languageData }, ref) => {
             </button>
             <button className="hero__cv">
               <a
-                href="https://drive.google.com/file/d/15AA3DqkPOomysj90bT-u1Q8AR-9Ter5t/view?usp=sharing"
+                href="https://drive.google.com/file/d/1n3cRzGtFwwbeI9nuGxOAtKzD9NU1Xzxp/view?usp=sharing"
                 target="_blank"
               >
                 <i className="bi bi-filetype-pdf"></i>

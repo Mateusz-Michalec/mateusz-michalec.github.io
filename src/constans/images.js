@@ -19,6 +19,28 @@ import ca_d_2 from "../assets/images/calendar/d_2.png";
 import ca_m_1 from "../assets/images/calendar/m_1.png";
 import icons from "./icons";
 
+import rdi_d_1 from "../assets/images/rdi/rdi_d_1.png";
+import rdi_d_2 from "../assets/images/rdi/rdi_d_2.png";
+import rdi_d_3 from "../assets/images/rdi/rdi_d_3.png";
+import rdi_d_4 from "../assets/images/rdi/rdi_d_4.png";
+import rdi_m_1 from "../assets/images/rdi/rdi_m_1.png";
+import rdi_m_2 from "../assets/images/rdi/rdi_m_2.png";
+import rdi_m_3 from "../assets/images/rdi/rdi_m_3.png";
+import rdi_m_4 from "../assets/images/rdi/rdi_m_4.png";
+
+const rdi = {
+  mobile: [rdi_m_1, rdi_m_2, rdi_m_3, rdi_m_4],
+  desktop: [rdi_d_1, rdi_d_2, rdi_d_3, rdi_d_4],
+  technologies: [
+    icons.skills[2],
+    icons.skills[4],
+    icons.skills[5],
+    icons.skills[6],
+  ],
+  github: "https://github.com/Mateusz-Michalec/radomski-dzien-inzyniera",
+  demo: "https://rdi.uniwersytetradom.pl/",
+};
+
 const eStore = {
   mobile: [es_m_1, es_m_2, es_m_3],
   desktop: [es_d_1, es_d_2, es_d_3, es_d_4, es_d_5],
@@ -59,4 +81,5 @@ export default {
   eStore,
   crypto,
   calendar,
+  rdi,
 };
