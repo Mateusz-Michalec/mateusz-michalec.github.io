@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 
 const EducationCard = ({ school, years, degree, languageData }) => {
   return (
@@ -17,11 +17,10 @@ const EducationCard = ({ school, years, degree, languageData }) => {
           <p>
             <span>{languageData.educationDegree}:</span> <b>{degree}</b>
           </p>
-          <p>{languageData.educationScholarships}</p>
         </header>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default EducationCard;
+export default EducationCard

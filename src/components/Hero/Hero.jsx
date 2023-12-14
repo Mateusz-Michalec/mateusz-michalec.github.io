@@ -1,6 +1,6 @@
-import React, { forwardRef } from "react";
-import "./Hero.scss";
-import { images } from "../../constans";
+import React, { forwardRef } from "react"
+import "./Hero.scss"
+import { images } from "../../constans"
 
 const Hero = forwardRef(({ languageData }, ref) => {
   return (
@@ -48,7 +48,7 @@ const Hero = forwardRef(({ languageData }, ref) => {
         </header>
       </div>
     </section>
-  );
-});
+  )
+})
 
-export default Hero;
+export default Hero

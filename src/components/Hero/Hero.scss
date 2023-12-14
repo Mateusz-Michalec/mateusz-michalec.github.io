@@ -12,6 +12,8 @@
   }
 
   .container {
+    z-index: 3;
+    position: relative;
     display: grid;
     gap: $m--sm;
     text-align: center;
