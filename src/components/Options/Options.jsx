@@ -17,16 +17,17 @@ const Options = ({ languageData }) => {
     }
   };
 
+  const handleLangChange = () => {
+    document
+      .querySelectorAll(".visible")
+      .forEach((el) => el.classList.remove("visible"));
+    setLanguage((prev) => (prev === "pl" ? "en" : "pl"));
+    document.documentElement.lang = language === "pl" ? "en" : "pl";
+  };
+
   return (
     <aside className="options container">
-      <button
-        onClick={() => {
-          document
-            .querySelectorAll(".visible")
-            .forEach((el) => el.classList.remove("visible"));
-          setLanguage((prev) => (prev === "pl" ? "en" : "pl"));
-        }}
-      >
+      <button onClick={() => handleLangChange()}>
         <img
           className="options__flag"
           src={language === "pl" ? icons.gbFlag : icons.plFlag}
